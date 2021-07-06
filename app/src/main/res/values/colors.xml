@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Default colors-->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--Project-->
+
+        <!--Colors-->
+            <!--Blue-->
+            <color name="blue_minus_2">#0C2D6E</color>
+            <color name="blue_minus_1">#0A46BD</color>
+            <color name="blue_0">#1362FF</color>
+            <color name="blue_1">#6196FF</color>
+            <color name="blue_2">#ADC9FF</color>
+            <color name="blue_3">#DAE6FF</color>
+
+            <!--Yellow-->
+            <color name="yellow_minus_2">#976811</color>
+            <color name="yellow_minus_1">#E99A0C</color>
+            <color name="yellow_0">#FFBC42</color>
+            <color name="yellow_1">#FFD78F</color>
+            <color name="yellow_2">#FFF2DB</color>
+
+        <!--Alerts-->
+            <!--Red-->
+            <color name="red_minus_2">#531313</color>
+            <color name="red_minus_1">#9A1818</color>
+            <color name="red_0">#E91717</color>
+            <color name="red_1">#F05C5C</color>
+            <color name="red_2">#F6A2A2</color>
+
+            <!--Green-->
+            <color name="green_minus_2">#0C3206</color>
+            <color name="green_minus_1">#177E07</color>
+            <color name="green_0">#1DD200</color>
+            <color name="green_1">#3EFF1F</color>
+            <color name="green_2">#CBFBC3</color>
+
+        <!--Dark and white-->
+            <!--Black-->
+            <color name="black_minus_1">#1C1C1C</color>
+            <color name="black_0">#2B2B2B</color>
+            <color name="black_1">#353535</color>
+            <color name="black_2">#B4B4B4</color>
+            <color name="black_3">#D4D4D4</color>
+
+            <color name="black_text">#434343</color>
+
+            <!--White-->
+            <color name="white_minus_1">#E4E4E4</color>
+            <color name="white_0">#F6F6F6</color>
+            <color name="white_1">#F8F8F8</color>
+            <color name="white_2">#F7F8FC</color>
+
+</resources>
