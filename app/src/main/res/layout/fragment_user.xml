@@ -20,7 +20,7 @@
             style="@style/DefaultHeaderConstraints"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/defaultHorizontalMargin"
+            android:layout_marginStart="@dimen/margin_default_horizontal"
 
             android:src="@drawable/avatar"
 
@@ -30,7 +30,7 @@
         <!--User name-->
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/userName"
-            style="@style/TitleHeader"
+            style="@style/TitleHeader.Avatar"
 
             android:layout_marginStart="16dp"
 
