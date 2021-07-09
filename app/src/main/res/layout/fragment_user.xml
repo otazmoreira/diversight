@@ -1,13 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".main.user.UserFragment">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
+    <!--Root ViewGroup-->
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/title_user" />
+        tools:context=".main.user.UserFragment">
 
-</FrameLayout>
+        <!--Background top-->
+        <include
+            android:id="@+id/backgroundTop"
+            layout="@layout/background_top" />
+
+        <!--Avatar-->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/userAvatar"
+            style="@style/DefaultHeaderConstraints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/defaultHorizontalMargin"
+
+            android:src="@drawable/avatar"
+
+            app:layout_constraintStart_toStartOf="@id/backgroundTop"
+            tools:ignore="MissingConstraints" />
+
+        <!--User name-->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/userName"
+            style="@style/TitleHeader"
+
+            android:layout_marginStart="16dp"
+
+            app:layout_constraintStart_toEndOf="@id/userAvatar"
+            tools:ignore="MissingConstraints"
+            tools:text="Carlos" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
