@@ -3,13 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
-    app:startDestination="@id/homeMenu">
+    app:startDestination="@id/doneFragment">
 
     <fragment
         android:id="@+id/homeMenu"
         android:name="com.metaexploit.diversight.main.home.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeMenu_to_emotionalFragment"
+            app:destination="@id/emotionalFragment" />
+        <action
+            android:id="@+id/action_homeMenu_to_researchFragment"
+            app:destination="@id/researchFragment" />
+    </fragment>
     <fragment
         android:id="@+id/userMenu"
         android:name="com.metaexploit.diversight.main.user.UserFragment"
@@ -19,10 +26,23 @@
         android:id="@+id/researchFragment"
         android:name="com.metaexploit.diversight.main.research.ResearchFragment"
         android:label="fragment_research"
-        tools:layout="@layout/fragment_research" />
+        tools:layout="@layout/fragment_research" >
+        <action
+            android:id="@+id/action_researchFragment_to_doneFragment"
+            app:destination="@id/doneFragment" />
+    </fragment>
     <fragment
         android:id="@+id/emotionalFragment"
         android:name="com.metaexploit.diversight.main.emotional.EmotionalFragment"
         android:label="fragment_emotional"
-        tools:layout="@layout/fragment_emotional" />
+        tools:layout="@layout/fragment_emotional" >
+        <action
+            android:id="@+id/action_emotionalFragment_to_doneFragment"
+            app:destination="@id/doneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/doneFragment"
+        android:name="com.metaexploit.diversight.main.done.DoneFragment"
+        android:label="fragment_done"
+        tools:layout="@layout/fragment_done" />
 </navigation>
