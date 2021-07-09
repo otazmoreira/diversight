@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="DefaultHeaderConstraints">
+        <item name="layout_constraintBottom_toBottomOf">@id/backgroundTop</item>
+        <item name="layout_constraintTop_toTopOf">@id/backgroundTop</item>
+        <item name="layout_constraintVertical_bias">@dimen/defaultBias</item>
+    </style>
+
+    <style name="TitleHeader" parent="@style/DefaultHeaderConstraints">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/defaultHorizontalMargin</item>
+
+        <item name="android:fontFamily">@font/mulish_bold</item>
+        <item name="android:textColor">@color/white_1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/h3_heading</item>
+    </style>
+</resources>
