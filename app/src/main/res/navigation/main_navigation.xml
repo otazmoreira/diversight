@@ -15,4 +15,14 @@
         android:name="com.metaexploit.diversight.main.user.UserFragment"
         android:label="fragment_user"
         tools:layout="@layout/fragment_user" />
+    <fragment
+        android:id="@+id/researchFragment"
+        android:name="com.metaexploit.diversight.main.research.ResearchFragment"
+        android:label="fragment_research"
+        tools:layout="@layout/fragment_research" />
+    <fragment
+        android:id="@+id/emotionalFragment"
+        android:name="com.metaexploit.diversight.main.emotional.EmotionalFragment"
+        android:label="fragment_emotional"
+        tools:layout="@layout/fragment_emotional" />
 </navigation>
