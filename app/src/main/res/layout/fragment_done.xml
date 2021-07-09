@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".main.done.DoneFragment">
+
+    <data>
+        <variable
+            name="Header"
+            type="com.metaexploit.diversight.main.Header" />
+    </data>
+
+    <!--Root ViewGroup-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--Background top-->
+        <include
+            android:id="@+id/backgroundTop"
+            layout="@layout/background_top" />
+
+        <!--Title-->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/titleHeader"
+            style="@style/TitleHeader.Center"
+
+            app:layout_constraintTop_toTopOf="@id/backgroundTop"
+            app:layout_constraintBottom_toBottomOf="@id/backgroundTop"
+            android:text="@={Header.title}"
+            tools:ignore="MissingConstraints"
+            tools:text="Pesquisa\nHumor Diário"/>
+
+        <!--Status layout-->
+        <include
+            android:id="@+id/statusLayout"
+            layout="@layout/status" />
+
+        <!--Send button-->
+        <com.google.android.material.button.MaterialButton
+            app:icon="@drawable/ic_home"
+            app:iconPadding="10dp"
+            android:text="@string/home_back"
+
+            style="@style/IconMaterialButton"
+            tools:ignore="MissingConstraints"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
