@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".main.emotional.EmotionalFragment"/>
+    tools:context=".main.emotional.EmotionalFragment">
+
+    <!--Root ViewGroup-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--Background top-->
+        <include
+            android:id="@+id/backgroundTop"
+            layout="@layout/background_top" />
+
+        <!--Back button-->
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnBack"
+            style="@style/BackButton"
+
+            tools:ignore="MissingConstraints" />
+
+        <!--Title-->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/titleHeader"
+            style="@style/TitleHeader.Center"
+
+            android:text="@string/title_emotional_header"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
