@@ -6,17 +6,24 @@
     <dimen name="text_large">16sp</dimen>
 
     <!--Titles-->
-    <dimen name="h7_heading">18sp</dimen>
-    <dimen name="h6_heading">20sp</dimen>
-    <dimen name="h5_heading">22sp</dimen>
-    <dimen name="h4_heading">24sp</dimen>
-    <dimen name="h3_heading">28sp</dimen>
-    <dimen name="h2_heading">32sp</dimen>
-    <dimen name="h1_heading">48sp</dimen>
+    <dimen name="heading_h7">18sp</dimen>
+    <dimen name="heading_h6">20sp</dimen>
+    <dimen name="heading_h5">22sp</dimen>
+    <dimen name="heading_h4">24sp</dimen>
+    <dimen name="heading_h3">28sp</dimen>
+    <dimen name="heading_h2">32sp</dimen>
+    <dimen name="heading_h1">48sp</dimen>
 
     <!--Margin-->
-    <dimen name="defaultHorizontalMargin">24dp</dimen>
+    <dimen name="margin_default_horizontal">24dp</dimen>
+
+    <!--Padding-->
+    <dimen name="padding_back_button">5dp</dimen>
 
     <!--Constraint Bias-->
-    <dimen name="defaultBias">0.35</dimen>
+    <dimen name="bias_default">0.35</dimen>
+    <dimen name="bias_layout_center">0.43</dimen>
+
+    <!--Back Button-->
+    <dimen name="back_button_dimension">37dp</dimen>
 </resources>
