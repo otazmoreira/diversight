@@ -15,15 +15,16 @@
         app:layout_constraintStart_toStartOf="parent"/>
 
     <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/smile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_smile"
         android:layout_gravity="center_vertical"
-        android:layout_marginEnd="@dimen/defaultHorizontalMargin"
+        android:layout_marginEnd="@dimen/margin_default_horizontal"
 
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintVertical_bias="@dimen/defaultBias"/>
+        app:layout_constraintVertical_bias="@dimen/bias_default"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
