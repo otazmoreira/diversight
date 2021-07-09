@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Texts-->
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="text_medium">14sp</dimen>
+    <dimen name="text_large">16sp</dimen>
+
+    <!--Titles-->
+    <dimen name="h7_heading">18sp</dimen>
+    <dimen name="h6_heading">20sp</dimen>
+    <dimen name="h5_heading">22sp</dimen>
+    <dimen name="h4_heading">24sp</dimen>
+    <dimen name="h3_heading">28sp</dimen>
+    <dimen name="h2_heading">32sp</dimen>
+    <dimen name="h1_heading">48sp</dimen>
+
+    <!--Margin-->
+    <dimen name="defaultHorizontalMargin">24dp</dimen>
+
+    <!--Constraint Bias-->
+    <dimen name="defaultBias">0.35</dimen>
+</resources>
