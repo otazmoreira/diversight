@@ -17,4 +17,9 @@
         <item name="android:gravity">center</item>
         <item name="android:textSize">@dimen/h3_heading</item>
     </style>
+
+    <style name="TitleHeader.Center">
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+    </style>
 </resources>
