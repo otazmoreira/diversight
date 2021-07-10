@@ -12,4 +12,7 @@
     <string name="name_example">Carlos</string>
     <string name="data_enterprise">Alterar dados da empresa</string>
     <string name="logout">Sair</string>
+    <string name="daily">Diária</string>
+    <string name="weekly">Semanal</string>
+    <string name="nps">NPS</string>
 </resources>
