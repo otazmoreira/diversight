@@ -28,5 +28,42 @@
             layout="@layout/status"
             android:visibility="gone"/>
 
+        <!--Menu filter-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+
+            app:layout_constraintEnd_toEndOf="@id/backgroundTop"
+            app:layout_constraintStart_toStartOf="@id/backgroundTop"
+            app:layout_constraintTop_toBottomOf="@id/titleHeader">
+
+            <!--Daily filter-->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnFilterDaily"
+                android:text="@string/daily"
+                app:icon="@drawable/ic_watch"
+                style="@style/FilterMaterialButton" />
+
+            <!--Weekly filter-->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnFilterWeekly"
+                android:text="@string/weekly"
+                app:icon="@drawable/ic_weekly"
+                style="@style/FilterMaterialButton" />
+
+            <!--Daily filter-->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnFilterNps"
+                android:text="@string/nps"
+                android:layout_width="70dp"
+                app:icon="@drawable/ic_nps"
+                style="@style/FilterMaterialButton" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
