@@ -3,25 +3,32 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
-    app:startDestination="@id/doneFragment">
+    app:startDestination="@id/homeFragment">
 
     <fragment
-        android:id="@+id/homeMenu"
+        android:id="@+id/homeFragment"
         android:name="com.metaexploit.diversight.main.home.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
-            android:id="@+id/action_homeMenu_to_emotionalFragment"
+            android:id="@+id/action_homeFragment_to_emotionalFragment"
             app:destination="@id/emotionalFragment" />
         <action
-            android:id="@+id/action_homeMenu_to_researchFragment"
+            android:id="@+id/action_homeFragment_to_researchFragment"
             app:destination="@id/researchFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_userFragment"
+            app:destination="@id/userFragment" />
     </fragment>
     <fragment
-        android:id="@+id/userMenu"
+        android:id="@+id/userFragment"
         android:name="com.metaexploit.diversight.main.user.UserFragment"
         android:label="fragment_user"
-        tools:layout="@layout/fragment_user" />
+        tools:layout="@layout/fragment_user" >
+        <action
+            android:id="@+id/action_userFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/researchFragment"
         android:name="com.metaexploit.diversight.main.research.ResearchFragment"
