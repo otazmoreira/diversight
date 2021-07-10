@@ -38,6 +38,7 @@
 
         <!--Send button-->
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBackHome"
             app:icon="@drawable/ic_home"
             app:iconPadding="10dp"
             android:text="@string/home_back"
