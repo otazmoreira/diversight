@@ -22,6 +22,8 @@
 
     <!--Constraint Bias-->
     <dimen name="bias_default">0.35</dimen>
+    <dimen name="bias_none">0</dimen>
+    <dimen name="bias_medium">0.15</dimen>
     <dimen name="bias_layout_center">0.43</dimen>
 
     <!--Back Button-->
