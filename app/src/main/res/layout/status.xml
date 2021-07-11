@@ -17,7 +17,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
 
-        tools:src="@drawable/status_done" />
+        tools:src="@drawable/img_status_done" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/textStatus"
