@@ -15,4 +15,8 @@
     <string name="daily">Diária</string>
     <string name="weekly">Semanal</string>
     <string name="nps">NPS</string>
+    <string name="daily_research">Pesquisas diárias</string>
+    <string name="weekly_research">Pesquisas semanais</string>
+    <string name="nps_research">Pesquisas trimestrais NPS</string>
+    <string name="admdem_research">Pesquisas Demissional / Admissional</string>
 </resources>
