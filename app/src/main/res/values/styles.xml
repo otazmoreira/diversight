@@ -104,4 +104,37 @@
         <item name="strokeWidth">0.5dp</item>
         <item name="cornerRadius">7dp</item>
     </style>
+
+    <style name="TitleListResearch">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/mulish_bold</item>
+        <item name="android:paddingStart">@dimen/margin_default_horizontal</item>
+        <item name="android:paddingEnd">@dimen/margin_default_horizontal</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textColor">@color/black_0</item>
+        <item name="android:textSize">@dimen/text_large</item>
+    </style>
+
+    <style name="ListResearch">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingStart">@dimen/margin_default_horizontal</item>
+        <item name="android:paddingEnd">@dimen/margin_default_horizontal</item>
+        <item name="android:layout_marginBottom">32dp</item>
+        <item name="layoutManager">androidx.recyclerview.widget.LinearLayoutManager</item>
+    </style>
+
+    <style name="ItemResearchSubtitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:fontFamily">@font/mulish_bold</item>
+        <item name="android:textColor">@color/black_text</item>
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
 </resources>
