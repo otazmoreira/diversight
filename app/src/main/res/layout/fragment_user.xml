@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_default_horizontal"
 
-            android:src="@drawable/avatar"
+            android:src="@drawable/img_avatar"
 
             app:layout_constraintStart_toStartOf="@id/backgroundTop"
             tools:ignore="MissingConstraints" />
