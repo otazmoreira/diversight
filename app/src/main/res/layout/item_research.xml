@@ -8,7 +8,7 @@
     android:layout_marginEnd="8dp">
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/icStatusItemResearch"
+        android:id="@+id/icStatus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="8dp"
@@ -19,7 +19,7 @@
         android:src="@drawable/ic_alert_yellow" />
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/imgItemResearch"
+        android:id="@+id/imgType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
@@ -31,7 +31,7 @@
 
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/txtStatusItemResearch"
+        android:id="@+id/txtStatus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -42,13 +42,13 @@
         android:textColor="@color/black_text"
         android:textSize="@dimen/text_small"
 
-        app:layout_constraintBottom_toTopOf="@id/txtDateItemResearch"
+        app:layout_constraintBottom_toTopOf="@id/txtDate"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imgItemResearch"
+        app:layout_constraintTop_toBottomOf="@id/imgType"
         android:text="Disponível" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/txtDateItemResearch"
+        android:id="@+id/txtDate"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -56,7 +56,7 @@
         style="@style/ItemResearchSubtitle" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/txtTypeItemResearch"
+        android:id="@+id/txtType"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
