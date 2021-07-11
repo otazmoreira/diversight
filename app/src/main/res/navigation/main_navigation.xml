@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.metaexploit.diversight.main.home.HomeFragment"
+        android:name="com.metaexploit.diversight.ui.main.home.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -22,7 +22,7 @@
     </fragment>
     <fragment
         android:id="@+id/userFragment"
-        android:name="com.metaexploit.diversight.main.user.UserFragment"
+        android:name="com.metaexploit.diversight.ui.main.user.UserFragment"
         android:label="fragment_user"
         tools:layout="@layout/fragment_user" >
         <action
@@ -31,7 +31,7 @@
     </fragment>
     <fragment
         android:id="@+id/researchFragment"
-        android:name="com.metaexploit.diversight.main.research.ResearchFragment"
+        android:name="com.metaexploit.diversight.ui.main.research.ResearchFragment"
         android:label="fragment_research"
         tools:layout="@layout/fragment_research" >
         <action
@@ -41,7 +41,7 @@
     </fragment>
     <fragment
         android:id="@+id/emotionalFragment"
-        android:name="com.metaexploit.diversight.main.emotional.EmotionalFragment"
+        android:name="com.metaexploit.diversight.ui.main.emotional.EmotionalFragment"
         android:label="fragment_emotional"
         tools:layout="@layout/fragment_emotional" >
         <action
@@ -51,7 +51,7 @@
     </fragment>
     <fragment
         android:id="@+id/doneFragment"
-        android:name="com.metaexploit.diversight.main.done.DoneFragment"
+        android:name="com.metaexploit.diversight.ui.main.done.DoneFragment"
         android:label="fragment_done"
         tools:layout="@layout/fragment_done" />
 </navigation>
