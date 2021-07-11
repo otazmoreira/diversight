@@ -2,12 +2,12 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".main.done.DoneFragment">
+    tools:context=".ui.main.done.DoneFragment">
 
     <data>
         <variable
             name="Header"
-            type="com.metaexploit.diversight.main.Header" />
+            type="com.metaexploit.diversight.ui.main.Header" />
     </data>
 
     <!--Root ViewGroup-->

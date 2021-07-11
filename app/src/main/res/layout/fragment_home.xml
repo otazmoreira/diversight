@@ -2,7 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".main.home.HomeFragment">
+    tools:context=".ui.main.home.HomeFragment">
 
     <!--Root ViewGroup-->
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -30,6 +30,7 @@
             android:visibility="gone"/>
 
         <!--TODO("Reduce icons size of "Weekly" and "NPS" like the "Daily"")-->
+        <!--TODO("Try use ConstraintLayout to turn layout responsive to be bigger")-->
         <!--Menu filter-->
         <androidx.appcompat.widget.LinearLayoutCompat
             android:id="@+id/menuFilter"

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".main.research.ResearchFragment">
+    tools:context=".ui.main.research.ResearchFragment">
 
     <data>
         <variable
             name="Header"
-            type="com.metaexploit.diversight.main.Header" />
+            type="com.metaexploit.diversight.ui.main.Header" />
     </data>
 
     <!--Root ViewGroup-->
