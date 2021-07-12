@@ -21,4 +21,9 @@
     <string name="weekly_research">Pesquisas semanais</string>
     <string name="nps_research">Pesquisas trimestrais NPS</string>
     <string name="admdem_research">Pesquisas Demissional / Admissional</string>
+    <string name="send">Enviar</string>
+
+
+    <string name="id_shared_pref">shared-pref</string>
+    <string name="id_form">sp_form</string>
 </resources>
