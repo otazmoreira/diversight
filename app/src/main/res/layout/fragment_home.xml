@@ -87,7 +87,7 @@
                 android:clipToPadding="false"
                 android:orientation="vertical"
                 android:paddingTop="85dp"
-                android:paddingBottom="159dp">
+                android:paddingBottom="130dp">
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/titleDaily"
