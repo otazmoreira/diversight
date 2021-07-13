@@ -68,4 +68,9 @@ dependencies {
 
     // Timber
     implementation 'com.jakewharton.timber:timber:4.7.1'
+
+    // Koin AndroidX Scope features
+    implementation 'io.insert-koin:koin-androidx-scope:2.2.3'
+    // Koin AndroidX ViewModel features
+    implementation 'io.insert-koin:koin-androidx-viewmodel:2.2.3'
 }
