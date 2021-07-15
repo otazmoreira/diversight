@@ -5,108 +5,109 @@
     tools:context=".ui.main.home.HomeFragment">
 
     <!--Root ViewGroup-->
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
-        <!--Background top-->
-        <include
-            android:id="@+id/backgroundTop"
-            layout="@layout/background_top" />
-
-        <!--Title-->
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/titleHeader"
-            style="@style/TitleHeader"
-            android:elevation="3dp"
-
-            android:text="@string/title_home_header"
-            tools:ignore="MissingConstraints" />
-
-        <!--Status layout-->
-        <include
-            android:id="@+id/statusLayout"
-            layout="@layout/status"
-            android:visibility="gone"/>
-
-        <!--TODO("Reduce icons size of "Weekly" and "NPS" like the "Daily"")-->
-        <!--TODO("Try use ConstraintLayout to turn layout responsive to be bigger")-->
-        <!--Menu filter-->
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:id="@+id/menuFilter"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_height="wrap_content">
 
-            android:elevation="2dp"
-            android:orientation="horizontal"
-            android:gravity="center_horizontal"
+            <!--Background top-->
+            <include
+                android:id="@+id/backgroundTop"
+                layout="@layout/background_top" />
 
-            app:layout_constraintEnd_toEndOf="@id/backgroundTop"
-            app:layout_constraintStart_toStartOf="@id/backgroundTop"
-            app:layout_constraintTop_toBottomOf="@id/titleHeader">
+            <!--Title-->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/titleHeader"
+                style="@style/TitleHeader"
+                android:elevation="3dp"
 
-            <!--Daily filter-->
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnFilterDaily"
-                android:text="@string/daily"
-                app:icon="@drawable/ic_watch"
-                style="@style/FilterMaterialButton" />
+                android:text="@string/title_home_header"
+                tools:ignore="MissingConstraints" />
 
-            <!--Weekly filter-->
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnFilterWeekly"
-                android:text="@string/weekly"
-                app:icon="@drawable/ic_weekly"
-                style="@style/FilterMaterialButton" />
+            <!--Status layout-->
+            <include
+                android:id="@+id/statusLayout"
+                layout="@layout/status"
+                android:visibility="gone"/>
 
-            <!--Daily filter-->
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnFilterNps"
-                android:text="@string/nps"
-                android:layout_width="70dp"
-                app:icon="@drawable/ic_nps"
-                style="@style/FilterMaterialButton" />
+            <!--TODO("Reduce icons size of "Weekly" and "NPS" like the "Daily"")-->
+            <!--TODO("Try use ConstraintLayout to turn layout responsive to be bigger")-->
+            <!--Menu filter-->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/menuFilter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
 
-        </androidx.appcompat.widget.LinearLayoutCompat>
+                android:elevation="2dp"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
 
-        <ScrollView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:elevation="1dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/menuFilter"
-            app:layout_constraintVertical_bias="0.0">
+                app:layout_constraintEnd_toEndOf="@id/backgroundTop"
+                app:layout_constraintStart_toStartOf="@id/backgroundTop"
+                app:layout_constraintTop_toBottomOf="@id/titleHeader">
+
+                <!--Daily filter-->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnFilterDaily"
+                    android:text="@string/daily"
+                    app:icon="@drawable/ic_watch"
+                    style="@style/FilterMaterialButton" />
+
+                <!--Weekly filter-->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnFilterWeekly"
+                    android:text="@string/weekly"
+                    app:icon="@drawable/ic_weekly"
+                    style="@style/FilterMaterialButton" />
+
+                <!--Daily filter-->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnFilterNps"
+                    android:text="@string/nps"
+                    android:layout_width="70dp"
+                    app:icon="@drawable/ic_nps"
+                    style="@style/FilterMaterialButton" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
 
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:clipToPadding="false"
                 android:orientation="vertical"
-                android:paddingTop="85dp"
-                android:paddingBottom="130dp">
+                android:layout_marginTop="46dp"
+                android:layout_marginBottom="149dp"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/menuFilter">
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/titleDaily"
                     style="@style/TitleListResearch"
-                    android:text="@string/daily_research" />
+                    android:text="@string/daily_research"
+                    android:visibility="visible" />
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/listDaily"
                     style="@style/ListResearch"
+                    android:visibility="visible"
                     tools:listitem="@layout/item_research" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/titleWeekly"
                     style="@style/TitleListResearch"
-                    android:text="@string/weekly_research" />
+                    android:text="@string/weekly_research"
+                    android:visibility="visible" />
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/listWeekly"
                     style="@style/ListResearch"
+                    android:visibility="visible"
                     tools:listitem="@layout/item_research" />
 
                 <androidx.appcompat.widget.AppCompatTextView
@@ -131,7 +132,8 @@
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
-        </ScrollView>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
 </layout>

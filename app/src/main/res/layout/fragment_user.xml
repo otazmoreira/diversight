@@ -52,17 +52,14 @@
         <!--Horizontal stroke-->
         <View
             android:id="@+id/horizontalStroke"
-            android:layout_width="0dp"
-            android:layout_height="1dp"
-            android:background="@color/black_2"
 
             android:layout_marginStart="40dp"
             android:layout_marginEnd="36dp"
 
-            android:layout_marginTop="8dp"
             app:layout_constraintTop_toBottomOf="@id/btnDataUser"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/HorizontalStroke" />
 
         <!--Change enterprise data button-->
         <com.google.android.material.button.MaterialButton
