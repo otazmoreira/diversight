@@ -36,7 +36,8 @@
         tools:layout="@layout/fragment_research" >
         <action
             android:id="@+id/action_researchFragment_to_doneFragment"
-            app:destination="@id/doneFragment" />
+            app:destination="@id/doneFragment"
+            app:popUpTo="@id/homeFragment" />
         <argument
             android:name="form"
             app:argType="string" />
@@ -48,7 +49,8 @@
         tools:layout="@layout/fragment_emotional" >
         <action
             android:id="@+id/action_emotionalFragment_to_doneFragment"
-            app:destination="@id/doneFragment" />
+            app:destination="@id/doneFragment"
+            app:popUpTo="@id/homeFragment" />
         <argument
             android:name="form"
             app:argType="string" />
@@ -61,5 +63,8 @@
         <action
             android:id="@+id/action_doneFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
+        <argument
+            android:name="form"
+            app:argType="string" />
     </fragment>
 </navigation>
