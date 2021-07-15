@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_default_horizontal"
+    android:layout_marginEnd="@dimen/margin_default_horizontal"
+    android:layout_marginBottom="16dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/bg_question_counter"
+        android:elevation="2dp"
+        android:fontFamily="@font/mulish_bold"
+        android:padding="4dp"
+        android:textColor="@color/white_1"
+        android:textSize="@dimen/text_small"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="1 de 5" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_item_research"
+        android:orientation="vertical"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/enunciated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:fontFamily="@font/mulish_bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_large"
+            tools:text="Atualmente você se sente satisfeito com a empresa?" />
+
+        <View
+            style="@style/HorizontalStroke"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="4dp" />
+
+        <RadioGroup
+            android:id="@+id/optionsGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
