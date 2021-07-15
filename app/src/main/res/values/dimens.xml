@@ -24,7 +24,7 @@
     <dimen name="bias_default">0.35</dimen>
     <dimen name="bias_none">0</dimen>
     <dimen name="bias_medium">0.15</dimen>
-    <dimen name="bias_layout_center">0.43</dimen>
+    <dimen name="bias_layout_center">0.47</dimen>
 
     <!--Back Button-->
     <dimen name="back_button_dimension">37dp</dimen>
