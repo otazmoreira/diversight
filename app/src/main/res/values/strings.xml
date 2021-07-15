@@ -22,8 +22,11 @@
     <string name="nps_research">Pesquisas trimestrais NPS</string>
     <string name="admdem_research">Pesquisas Demissional / Admissional</string>
     <string name="send">Enviar</string>
+    <string name="counter">%1$d de %2$d</string>
 
 
     <string name="id_shared_pref">shared-pref</string>
     <string name="id_form">sp_form</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
