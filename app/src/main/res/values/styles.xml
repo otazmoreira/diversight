@@ -145,4 +145,11 @@
         <item name="android:textColor">@color/black_text</item>
         <item name="android:textSize">@dimen/text_small</item>
     </style>
+
+    <style name="HorizontalStroke">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/black_2</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
 </resources>
