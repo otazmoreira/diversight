@@ -28,6 +28,9 @@
         <action
             android:id="@+id/action_userFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
+        <argument
+            android:name="user"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/researchFragment"
