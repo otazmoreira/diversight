@@ -31,7 +31,7 @@
             <include
                 android:id="@+id/statusLayout"
                 layout="@layout/status"
-                android:visibility="gone"/>
+                android:visibility="visible" />
 
             <!--TODO("Reduce icons size of "Weekly" and "NPS" like the "Daily"")-->
             <!--TODO("Try use ConstraintLayout to turn layout responsive to be bigger")-->
@@ -113,21 +113,25 @@
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/titleNps"
                     style="@style/TitleListResearch"
-                    android:text="@string/nps_research" />
+                    android:text="@string/nps_research"
+                    android:visibility="gone" />
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/listNps"
                     style="@style/ListResearch"
+                    android:visibility="gone"
                     tools:listitem="@layout/item_research" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/titleAdmDem"
                     style="@style/TitleListResearch"
-                    android:text="@string/admdem_research" />
+                    android:text="@string/admdem_research"
+                    android:visibility="gone" />
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/listAdmDem"
                     style="@style/ListResearch"
+                    android:visibility="gone"
                     tools:listitem="@layout/item_research" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
