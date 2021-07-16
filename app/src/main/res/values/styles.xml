@@ -73,6 +73,8 @@
     <!--Material button-->
     <style name="MaterialButton" parent="IconMaterialButton">
         <item name="layout_constraintBottom_toBottomOf"/>
+        <item name="android:layout_marginStart">@dimen/margin_default_horizontal</item>
+        <item name="android:layout_marginEnd">@dimen/margin_default_horizontal</item>
     </style>
 
 
