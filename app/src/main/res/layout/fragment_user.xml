@@ -41,7 +41,7 @@
         <!--Change user data button-->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnDataUser"
-            style="@style/UserMaterialButton"
+            style="@style/MaterialButtonText.User"
 
             android:layout_marginTop="55dp"
             android:text="@string/data_user"
@@ -64,7 +64,7 @@
         <!--Change enterprise data button-->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnDataEnterprise"
-            style="@style/UserMaterialButton"
+            style="@style/MaterialButtonText.User"
 
             android:layout_marginTop="8dp"
             android:text="@string/data_enterprise"
@@ -74,7 +74,7 @@
         <!--Logout button-->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnLogout"
-            style="@style/UserMaterialButton"
+            style="@style/MaterialButtonText.User"
 
             android:layout_marginBottom="36dp"
             android:text="@string/logout"
