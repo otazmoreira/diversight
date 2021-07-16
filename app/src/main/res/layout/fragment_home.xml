@@ -90,24 +90,24 @@
                     android:id="@+id/titleDaily"
                     style="@style/TitleListResearch"
                     android:text="@string/daily_research"
-                    android:visibility="visible" />
+                    android:visibility="gone" />
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/listDaily"
                     style="@style/ListResearch"
-                    android:visibility="visible"
+                    android:visibility="gone"
                     tools:listitem="@layout/item_research" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/titleWeekly"
                     style="@style/TitleListResearch"
                     android:text="@string/weekly_research"
-                    android:visibility="visible" />
+                    android:visibility="gone" />
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/listWeekly"
                     style="@style/ListResearch"
-                    android:visibility="visible"
+                    android:visibility="gone"
                     tools:listitem="@layout/item_research" />
 
                 <androidx.appcompat.widget.AppCompatTextView
