@@ -41,9 +41,9 @@
 
             <AutoCompleteTextView
                 style="@style/TextInputLayoutAuto"
-                android:inputType="textEmailAddress"
                 android:hint="@string/email"
-                android:text="samilly@ioasys.com"/>
+                android:inputType="textEmailAddress"
+                android:text="milly@ioasys.com" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
