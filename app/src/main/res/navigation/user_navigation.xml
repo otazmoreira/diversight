@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.metaexploit.diversight.ui.user.login.LoginFragment"
+        android:name="com.metaexploit.diversight.ui.sign.login.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/onboardFragment"
-        android:name="com.metaexploit.diversight.ui.user.onboard.OnboardFragment"
+        android:name="com.metaexploit.diversight.ui.sign.onboard.OnboardFragment"
         android:label="fragment_onboard"
         tools:layout="@layout/fragment_onboard" >
         <action
@@ -25,7 +25,7 @@
     </fragment>
     <fragment
         android:id="@+id/signupFragment"
-        android:name="com.metaexploit.diversight.ui.user.signup.SignupFragment"
+        android:name="com.metaexploit.diversight.ui.sign.signup.SignupFragment"
         android:label="fragment_signup"
         tools:layout="@layout/fragment_signup" >
         <action
@@ -34,7 +34,7 @@
     </fragment>
     <fragment
         android:id="@+id/splashFragment"
-        android:name="com.metaexploit.diversight.ui.user.splash.SplashFragment"
+        android:name="com.metaexploit.diversight.ui.sign.splash.SplashFragment"
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash" >
         <action
