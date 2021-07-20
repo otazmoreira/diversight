@@ -86,6 +86,13 @@
         <item name="android:layout_marginEnd">@dimen/margin_default_horizontal</item>
     </style>
 
+    <!--Material button-->
+    <style name="MaterialButton.Update">
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="android:layout_width">140dp</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_marginBottom">40dp</item>
+    </style>
 
     <!--Material button with icon - Send button-->
     <style name="IconMaterialButton.Send">

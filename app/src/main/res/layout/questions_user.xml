@@ -192,6 +192,29 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <!--Birthday label-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtBirthday"
+        style="@style/TitleInput"
 
+        android:text="@string/birthday"
+        app:layout_constraintStart_toStartOf="@id/edtBirthday"
+        app:layout_constraintTop_toBottomOf="@id/containerPCD"
+        tools:ignore="MissingConstraints" />
+    <!--Birthday input-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtBirthday"
+        style="@style/TextInputLayout"
+
+        app:layout_constraintTop_toBottomOf="@id/txtBirthday"
+        tools:ignore="MissingConstraints">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoBirthday"
+            style="@style/TextInputLayoutAuto"
+            android:hint="@string/birthday"
+            android:inputType="none"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
