@@ -1,15 +1,197 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    >
-    <androidx.appcompat.widget.LinearLayoutCompat
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+    <!--Name label-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtName"
+        style="@style/TitleInput"
 
-    </androidx.appcompat.widget.LinearLayoutCompat>
-</layout>
+        android:text="@string/name"
+        app:layout_constraintStart_toStartOf="@id/edtName"
+        tools:ignore="MissingConstraints" />
+    <!--Name input-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtName"
+        style="@style/TextInputLayout"
+
+        app:layout_constraintTop_toBottomOf="@id/txtName"
+        tools:ignore="MissingConstraints">
+
+        <AutoCompleteTextView
+            style="@style/TextInputLayoutAuto"
+            android:hint="@string/name" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Skin label-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtSkin"
+        style="@style/TitleInput"
+
+        android:text="@string/skin"
+        app:layout_constraintStart_toStartOf="@id/edtName"
+        app:layout_constraintTop_toBottomOf="@id/edtName"
+        tools:ignore="MissingConstraints" />
+    <!--Skin dropdown menu-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/containerSkin"
+        app:layout_constraintTop_toBottomOf="@id/txtSkin"
+        style="@style/DropDownMenuContainer"
+        tools:ignore="MissingConstraints">
+
+        <!--Skin Input-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edtSkin"
+            style="@style/TextInputLayout.DropDownMenu"
+            tools:ignore="MissingConstraints">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoSkin"
+                style="@style/TextInputLayoutAuto.DropDownMenu"
+                android:hint="@string/name" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Skin options-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/listSkin"
+            style="@style/DropDownMenuOptions"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/edtSkin"
+            app:layout_constraintStart_toStartOf="@id/edtSkin"
+            app:layout_constraintTop_toTopOf="@id/edtSkin" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--Sex label-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtSex"
+        style="@style/TitleInput"
+
+        android:text="@string/sex"
+        app:layout_constraintStart_toStartOf="@id/edtName"
+        app:layout_constraintTop_toBottomOf="@id/containerSkin"
+        tools:ignore="MissingConstraints" />
+    <!--Sex dropdown menu-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/containerSex"
+        app:layout_constraintTop_toBottomOf="@id/txtSex"
+        style="@style/DropDownMenuContainer"
+        tools:ignore="MissingConstraints">
+
+        <!--Sex Input-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edtSex"
+            style="@style/TextInputLayout.DropDownMenu"
+            tools:ignore="MissingConstraints">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoSex"
+                style="@style/TextInputLayoutAuto.DropDownMenu"
+                android:hint="@string/name" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Sex options-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/listSex"
+            style="@style/DropDownMenuOptions"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/edtSex"
+            app:layout_constraintStart_toStartOf="@id/edtSex"
+            app:layout_constraintTop_toTopOf="@id/edtSex" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--Gender label-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtGender"
+        style="@style/TitleInput"
+
+        android:text="@string/gender"
+        app:layout_constraintStart_toStartOf="@id/edtName"
+        app:layout_constraintTop_toBottomOf="@id/containerSex"
+        tools:ignore="MissingConstraints" />
+    <!--Gender dropdown menu-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/containerGender"
+        app:layout_constraintTop_toBottomOf="@id/txtGender"
+        style="@style/DropDownMenuContainer"
+        tools:ignore="MissingConstraints">
+
+        <!--Gender Input-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edtGender"
+            style="@style/TextInputLayout.DropDownMenu"
+            tools:ignore="MissingConstraints">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoGender"
+                style="@style/TextInputLayoutAuto.DropDownMenu"
+                android:hint="@string/name" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Gender options-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/listGender"
+            style="@style/DropDownMenuOptions"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/edtGender"
+            app:layout_constraintStart_toStartOf="@id/edtGender"
+            app:layout_constraintTop_toTopOf="@id/edtGender" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--PCD label-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtPCD"
+        style="@style/TitleInput"
+
+        android:text="@string/pcd"
+        app:layout_constraintStart_toStartOf="@id/edtName"
+        app:layout_constraintTop_toBottomOf="@id/containerGender"
+        tools:ignore="MissingConstraints" />
+    <!--PCD dropdown menu-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/containerPCD"
+        app:layout_constraintTop_toBottomOf="@id/txtPCD"
+        style="@style/DropDownMenuContainer"
+        tools:ignore="MissingConstraints">
+
+        <!--PCD Input-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edtPCD"
+            style="@style/TextInputLayout.DropDownMenu"
+            tools:ignore="MissingConstraints">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoPCD"
+                style="@style/TextInputLayoutAuto.DropDownMenu"
+                android:hint="@string/name" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--PCD options-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/listPCD"
+            style="@style/DropDownMenuOptions"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/edtPCD"
+            app:layout_constraintStart_toStartOf="@id/edtPCD"
+            app:layout_constraintTop_toTopOf="@id/edtPCD" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

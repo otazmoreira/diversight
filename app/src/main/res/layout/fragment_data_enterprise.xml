@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.main.data_enterprise.DataEnterpriseFragment">
+
+    <!--Root ViewGroup-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--Background top-->
+        <include
+            android:id="@+id/backgroundTop"
+            layout="@layout/background_top" />
+
+        <!--Back button-->
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnBack"
+            style="@style/BackButton"
+
+            tools:ignore="MissingConstraints" />
+
+        <!--Title-->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/titleHeader"
+            style="@style/TitleHeader.Center.Update"
+
+            android:text="@string/update_data"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

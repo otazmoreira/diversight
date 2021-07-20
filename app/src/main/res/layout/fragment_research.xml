@@ -5,7 +5,6 @@
     tools:context=".ui.main.research.ResearchFragment">
 
     <data>
-
         <variable
             name="Header"
             type="com.metaexploit.diversight.ui.main.Header" />

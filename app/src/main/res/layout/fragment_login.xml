@@ -28,7 +28,7 @@
 
             app:layout_constraintStart_toStartOf="@id/edtEmail"
             app:layout_constraintTop_toBottomOf="@id/logo"
-            style="@style/TitleInputLogin" />
+            style="@style/TitleInput.Login" />
 
         <!--E-mail input-->
         <com.google.android.material.textfield.TextInputLayout
@@ -55,7 +55,7 @@
             android:layout_marginTop="8dp"
             app:layout_constraintStart_toStartOf="@id/edtEmail"
             app:layout_constraintTop_toBottomOf="@id/edtEmail"
-            style="@style/TitleInputLogin" />
+            style="@style/TitleInput.Login" />
 
         <!--Password input-->
         <com.google.android.material.textfield.TextInputLayout

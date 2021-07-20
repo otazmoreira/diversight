@@ -30,6 +30,15 @@
         <item name="android:layout_marginStart" />
     </style>
 
+    <!--Header title update fragment centralized-->
+    <style name="TitleHeader.Center.Update">
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintVertical_bias">0.30</item>
+        <item name="android:elevation">2dp</item>
+        <item name="android:layout_marginStart" />
+    </style>
+
     <!--Header title in fragment_user.xml-->
     <style name="TitleHeader.Avatar">
         <item name="layout_constraintStart_toStartOf" />
@@ -178,6 +187,34 @@
         <item name="boxCornerRadiusBottomEnd">12dp</item>
         <item name="boxCornerRadiusTopEnd">12dp</item>
         <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+    </style>
+
+    <style name="TextInputLayout.DropDownMenu">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart" />
+        <item name="android:layout_marginEnd" />
+        <item name="android:layout_marginBottom" />
+        <item name="layout_constraintTop_toTopOf">parent</item>
+    </style>
+
+    <style name="TextInputLayoutDropDownMenu" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:layout_marginStart">@dimen/margin_default_horizontal</item>
+        <item name="android:layout_marginEnd">@dimen/margin_default_horizontal</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="hintEnabled">false</item>
+        <item name="boxStrokeColor">@color/cs_input</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
     </style>
 
     <style name="TextInputLayoutAuto">
@@ -186,16 +223,61 @@
         <item name="android:fontFamily">@font/mulish_regular</item>
         <item name="android:paddingStart">16dp</item>
         <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
         <item name="android:textSize">@dimen/heading_h7</item>
-        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textColorHint">@color/transparent</item>
+
     </style>
 
-    <style name="TitleInputLogin">
+    <style name="TextInputLayoutAuto.DropDownMenu">
+        <item name="android:layout_height">44dp</item>
+        <item name="android:inputType">none</item>
+        <item name="android:drawableEnd">@drawable/ic_arrow</item>
+        <item name="android:text">@string/select</item>
+    </style>
+
+    <style name="TitleInput">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@color/black_text</item>
         <item name="android:textSize">@dimen/text_large</item>
         <item name="android:fontFamily">@font/mulish_regular</item>
+        <item name="android:layout_marginTop">24dp</item>
+    </style>
+
+    <style name="InputItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">24dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:textColor">@color/black_text</item>
+        <item name="android:textSize">@dimen/heading_h7</item>
+        <item name="android:fontFamily">@font/mulish_regular</item>
+        <item name="android:layout_marginTop">24dp</item>
+    </style>
+
+    <style name="TitleInput.Login">
         <item name="android:layout_marginTop">40dp</item>
     </style>
+
+    <style name="DropDownMenuContainer">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/margin_default_horizontal</item>
+        <item name="android:layout_marginEnd">@dimen/margin_default_horizontal</item>
+        <item name="android:orientation">vertical</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+    </style>
+
+    <style name="DropDownMenuOptions">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_input</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingTop">60dp</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
 </resources>

@@ -23,12 +23,54 @@
     <string name="admdem_research">Pesquisas Demissional / Admissional</string>
     <string name="send">Enviar</string>
     <string name="counter">%1$d de %2$d</string>
-
-    <!--Shared keys-->
-    <string name="id_shared_pref">shared-pref</string>
-    <string name="id_user">user</string>
     <string name="email">E-mail</string>
     <string name="password">Password</string>
     <string name="login">Entrar</string>
     <string name="signup">Cadastrar</string>
+    <string name="update_data">Alterar dados</string>
+    <string name="name">Nome</string>
+    <string name="skin">Cor e/ou Raça</string>
+    <string name="select">Selecionar</string>
+    <string name="sex">Gênero</string>
+    <string name="gender">Orientação sexual</string>
+    <string name="pcd">PCD</string>
+
+    <!--Shared keys-->
+    <string name="id_shared_pref">shared-pref</string>
+    <string name="id_user">user</string>
+
+    <!--Skin list-->
+    <string-array name="skins_list">
+        <item>Branca</item>
+        <item>Parda</item>
+        <item>Preta</item>
+        <item>Amarela</item>
+        <item>Indígena</item>
+    </string-array>
+
+    <!--Sex list-->
+    <string-array name="sex_list">
+        <item>Homem cisgênero</item>
+        <item>Mulher cisgênero</item>
+        <item>Homem transgênero</item>
+        <item>Mulher transgênero</item>
+        <item>Agênero</item>
+        <item>Não binário</item>
+    </string-array>
+
+    <!--Gender list-->
+    <string-array name="gender_list">
+        <item>Heterossexual</item>
+        <item>Homossexual</item>
+        <item>Bissexual</item>
+        <item>Panssexual</item>
+        <item>Assexual</item>
+    </string-array>
+
+    <!--PCD response list-->
+    <string-array name="pcd_response_list">
+        <item>Não possui</item>
+        <item>Possui</item>
+    </string-array>
+
 </resources>
