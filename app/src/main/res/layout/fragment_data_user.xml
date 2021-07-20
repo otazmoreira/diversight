@@ -33,8 +33,10 @@
                 android:text="@string/update_data"
                 tools:ignore="MissingConstraints" />
 
-            <FrameLayout
+            <androidx.fragment.app.FragmentContainerView
                 android:id="@+id/questionsUser"
+                android:name="com.metaexploit.diversight.ui.fragments.UserQuestionsFragment"
+                tools:layout="@layout/fragment_user_questions"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
 
@@ -42,11 +44,7 @@
 
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/backgroundTop">
-
-                <include layout="@layout/questions_user"/>
-
-            </FrameLayout>
+                app:layout_constraintTop_toBottomOf="@id/backgroundTop"/>
 
             <com.google.android.material.button.MaterialButton
                 style="@style/MaterialButton.Update"
