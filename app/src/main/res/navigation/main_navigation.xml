@@ -80,18 +80,10 @@
         android:id="@+id/dataUserFragment"
         android:name="com.metaexploit.diversight.ui.main.data_user.DataUserFragment"
         android:label="data_user_fragment"
-        tools:layout="@layout/data_user_fragment" >
-        <action
-            android:id="@+id/action_dataUserFragment_to_userFragment"
-            app:destination="@id/userFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_data_user" />
     <fragment
         android:id="@+id/dataEnterpriseFragment"
         android:name="com.metaexploit.diversight.ui.main.data_enterprise.DataEnterpriseFragment"
         android:label="data_enterprise_fragment"
-        tools:layout="@layout/data_enterprise_fragment" >
-        <action
-            android:id="@+id/action_dataEnterpriseFragment_to_userFragment"
-            app:destination="@id/userFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_data_enterprise" />
 </navigation>
