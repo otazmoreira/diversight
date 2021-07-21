@@ -47,6 +47,10 @@
     <string name="intellectual">Intelectual</string>
     <string name="psychosocial">Psicossocial</string>
     <string name="readapted">Reabilitado / Readaptado</string>
+    <string name="enterprise">Empresa</string>
+    <string name="occupation">Área de atuação</string>
+    <string name="office">Cargo</string>
+    <string name="next">Próximo</string>
 
     <!--Skin list-->
     <string-array name="skins_list">
@@ -56,7 +60,6 @@
         <item>Amarela</item>
         <item>Indígena</item>
     </string-array>
-
     <!--Sex list-->
     <string-array name="sex_list">
         <item>Homem cisgênero</item>
@@ -66,7 +69,6 @@
         <item>Agênero</item>
         <item>Não binário</item>
     </string-array>
-
     <!--Gender list-->
     <string-array name="gender_list">
         <item>Heterossexual</item>
@@ -75,11 +77,23 @@
         <item>Panssexual</item>
         <item>Assexual</item>
     </string-array>
-
     <!--PCD response list-->
     <string-array name="pcd_response_list">
         <item>Não possui</item>
         <item>Possui</item>
     </string-array>
+
+    <!--First word SignUp-->
+    <string name="signup_first_word_user">Olá</string>
+    <string name="signup_first_word_enterprise">Agora</string>
+    <string name="signup_first_word_email">E-mail</string>
+    <string name="signup_first_word_password">Por fim</string>
+
+    <!--Text SignUp-->
+    <string name="signup_text_user">Não se preocupe! Seus dados estão seguros conosco e são necessários apenas para confirmarmos a sua identidade.</string>
+    <string name="signup_text_enterprise">Precisamos entender um pouco mais sobre o seu momento profissional, pode nos auxiliar?</string>
+    <string name="signup_text_email">Não se preocupe! Prometemos enviar apenas informações importantes via e-mail.</string>
+    <string name="signup_text_password">Escolha qual senha você utilizará para acessar a nossa plataforma.</string>
+    <string name="passwordConfirm">Confirmar senha</string>
 
 </resources>
