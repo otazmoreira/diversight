@@ -6,7 +6,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:paddingHorizontal="@dimen/margin_default_horizontal">
 
         <!--Logo-->
         <androidx.appcompat.widget.AppCompatImageView
@@ -79,7 +80,6 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnLogin"
-            android:layout_width="0dp"
 
             android:text="@string/login"
 
