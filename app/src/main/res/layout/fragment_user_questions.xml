@@ -25,6 +25,7 @@
             tools:ignore="MissingConstraints">
 
             <AutoCompleteTextView
+                android:id="@+id/autoName"
                 style="@style/TextInputLayoutAuto"
                 android:hint="@string/name" />
 
@@ -194,6 +195,50 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
+        <!--PCD options-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/containerPCDOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="@dimen/margin_default_horizontal"
+            app:layout_constraintTop_toBottomOf="@id/containerPCD">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/optVisual"
+
+                android:text="@string/visual"
+                style="@style/CheckBox" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/optPhysical"
+                android:text="@string/physical"
+                style="@style/CheckBox" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/optHearing"
+                android:text="@string/hearing"
+                style="@style/CheckBox" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/optIntellectual"
+                android:text="@string/intellectual"
+                style="@style/CheckBox" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/optPsychosocial"
+                android:text="@string/psychosocial"
+                style="@style/CheckBox" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/optReadapted"
+                android:text="@string/readapted"
+                style="@style/CheckBox" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
         <!--Birthday label-->
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/txtBirthday"
@@ -201,7 +246,7 @@
 
             android:text="@string/birthday"
             app:layout_constraintStart_toStartOf="@id/edtBirthday"
-            app:layout_constraintTop_toBottomOf="@id/containerPCD"
+            app:layout_constraintTop_toBottomOf="@id/containerPCDOptions"
             tools:ignore="MissingConstraints" />
         <!--Birthday input-->
         <com.google.android.material.textfield.TextInputLayout
