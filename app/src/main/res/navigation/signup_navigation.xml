@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/signup_navigation"
+    app:startDestination="@id/signUserFragment">
+    <fragment
+        android:id="@+id/signUserFragment"
+        android:name="com.metaexploit.diversight.ui.sign.signup.user.SignUserFragment"
+        android:label="fragment_sign_user"
+        tools:layout="@layout/fragment_sign_user" >
+        <action
+            android:id="@+id/action_signUserFragment_to_signEnterpriseFragment"
+            app:destination="@id/signEnterpriseFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/signEnterpriseFragment"
+        android:name="com.metaexploit.diversight.ui.sign.signup.enterprise.SignEnterpriseFragment"
+        android:label="fragment_sign_enterprise"
+        tools:layout="@layout/fragment_sign_enterprise" >
+        <action
+            android:id="@+id/action_signEnterpriseFragment_to_signEmailFragment"
+            app:destination="@id/signEmailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/signEmailFragment"
+        android:name="com.metaexploit.diversight.ui.sign.signup.email.SignEmailFragment"
+        android:label="fragment_sign_email"
+        tools:layout="@layout/fragment_sign_email" >
+        <action
+            android:id="@+id/action_signEmailFragment_to_signPasswordFragment"
+            app:destination="@id/signPasswordFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/signPasswordFragment"
+        android:name="com.metaexploit.diversight.ui.sign.signup.password.SignPasswordFragment"
+        android:label="fragment_sign_password"
+        tools:layout="@layout/fragment_sign_password" />
+</navigation>
