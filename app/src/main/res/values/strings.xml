@@ -41,6 +41,12 @@
     <string name="birthday">Data de nascimento</string>
     <string name="update">Atualizar</string>
     <string name="select_date">Selecione a data</string>
+    <string name="visual">Visual</string>
+    <string name="physical">Física</string>
+    <string name="hearing">Auditiva</string>
+    <string name="intellectual">Intelectual</string>
+    <string name="psychosocial">Psicossocial</string>
+    <string name="readapted">Reabilitado / Readaptado</string>
 
     <!--Skin list-->
     <string-array name="skins_list">
