@@ -83,6 +83,9 @@
     <!--Material button-->
     <style name="MaterialButton" parent="IconMaterialButton">
         <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginStart">@dimen/margin_default_horizontal</item>
+        <item name="android:layout_marginEnd">@dimen/margin_default_horizontal</item>
+        <item name="android:elevation">8dp</item>
         <item name="layout_constraintBottom_toBottomOf"/>
     </style>
 
@@ -119,6 +122,13 @@
         <item name="android:paddingEnd">12dp</item>
         <item name="layout_constraintHorizontal_bias">@dimen/bias_none</item>
         <item name="icon">@drawable/ic_edit</item>
+    </style>
+
+    <style name="MaterialButtonText.Onboard">
+        <item name="layout_constraintStart_toStartOf" />
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
     </style>
 
     <!--Material button in menu filter-->
@@ -185,7 +195,8 @@
     <style name="TextInputLayout" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">44dp</item>
-
+        <item name="android:layout_marginStart">@dimen/margin_default_horizontal</item>
+        <item name="android:layout_marginEnd">@dimen/margin_default_horizontal</item>
         <item name="android:layout_marginTop">8dp</item>
         <item name="hintEnabled">false</item>
         <item name="boxStrokeColor">@color/cs_input</item>
@@ -201,8 +212,8 @@
     <style name="TextInputLayout.DropDownMenu">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginStart" />
-        <item name="android:layout_marginEnd" />
+        <item name="android:layout_marginStart">@dimen/margin_default_horizontal</item>
+        <item name="android:layout_marginEnd">@dimen/margin_default_horizontal</item>
         <item name="android:layout_marginBottom" />
         <item name="layout_constraintTop_toTopOf">parent</item>
     </style>
@@ -251,6 +262,8 @@
         <item name="android:textSize">@dimen/text_large</item>
         <item name="android:fontFamily">@font/mulish_regular</item>
         <item name="android:layout_marginTop">24dp</item>
+        <item name="android:layout_marginStart">@dimen/margin_default_horizontal</item>
+        <item name="android:layout_marginEnd">@dimen/margin_default_horizontal</item>
     </style>
 
     <style name="InputItem">

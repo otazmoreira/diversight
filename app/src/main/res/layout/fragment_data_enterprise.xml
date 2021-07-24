@@ -35,7 +35,7 @@
 
             <androidx.fragment.app.FragmentContainerView
                 android:id="@+id/questionsEnterprise"
-                android:name="com.metaexploit.diversight.ui.sign.signup.enterprise_questions.EnterpriseQuestionsFragment"
+                android:name="com.metaexploit.diversight.ui.sign.signup.questions_enterprise.EnterpriseQuestionsFragment"
                 tools:layout="@layout/fragment_questions_enterprise"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

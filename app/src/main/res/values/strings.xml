@@ -95,5 +95,6 @@
     <string name="signup_text_email">Não se preocupe! Prometemos enviar apenas informações importantes via e-mail.</string>
     <string name="signup_text_password">Escolha qual senha você utilizará para acessar a nossa plataforma.</string>
     <string name="passwordConfirm">Confirmar senha</string>
+    <string name="skip">Pular</string>
 
 </resources>

@@ -6,8 +6,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingHorizontal="@dimen/margin_default_horizontal">
+        android:layout_height="match_parent">
 
         <!--Logo-->
         <androidx.appcompat.widget.AppCompatImageView
@@ -27,7 +26,7 @@
             android:id="@+id/txtEmail"
             android:text="@string/email"
 
-            app:layout_constraintStart_toStartOf="@id/edtEmail"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/logo"
             style="@style/TitleInput.Login" />
 
@@ -54,7 +53,7 @@
             android:text="@string/password"
 
             android:layout_marginTop="8dp"
-            app:layout_constraintStart_toStartOf="@id/edtEmail"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/edtEmail"
             style="@style/TitleInput.Login" />
 
@@ -82,7 +81,6 @@
             android:id="@+id/btnLogin"
 
             android:text="@string/login"
-
             android:layout_marginTop="52dp"
             app:layout_constraintTop_toBottomOf="@id/edtPassword"
             style="@style/MaterialButton"
