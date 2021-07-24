@@ -97,4 +97,17 @@
     <string name="passwordConfirm">Confirmar senha</string>
     <string name="skip">Pular</string>
 
+    <!--Onboard title-->
+    <string name="onboard_title1">Pesquisas Diárias</string>
+    <string name="onboard_title2">Análise de NPS</string>
+    <string name="onboard_title3">Diversidade</string>
+
+    <!--Onboard text-->
+    <string name="onboard_text1">Responda pesquisas referente ao seu humor diário de forma simples e rápida.</string>
+    <string name="onboard_text2">Responda de forma segura uma pesquisa trimestral e demonstre a sua satisfação com a empresa atual.</string>
+    <string name="onboard_text3">Responda as pesquisas e ajude a transformar o seu ambiente organizacional em um local mais inclusivo.</string>
+
+    <string name="back">Anterior</string>
+    <string name="lets_go">Vamos lá!</string>
+
 </resources>
