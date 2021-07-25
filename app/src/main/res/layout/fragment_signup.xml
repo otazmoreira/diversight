@@ -10,8 +10,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingHorizontal="@dimen/margin_default_horizontal">
+            android:layout_height="wrap_content">
 
             <!--Back button-->
             <androidx.appcompat.widget.AppCompatImageView
@@ -19,7 +18,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/ic_back_sign"
-
+                android:layout_marginStart="@dimen/margin_default_horizontal"
                 android:layout_marginTop="12dp"
 
                 app:layout_constraintStart_toStartOf="parent"
@@ -30,6 +29,7 @@
                 android:layout_width="0dp"
                 android:layout_height="40dp"
                 android:progress="15"
+                android:layout_marginEnd="@dimen/margin_default_horizontal"
                 app:trackThickness="13dp"
                 app:trackCornerRadius="50dp"
                 app:trackColor="@color/white_1"

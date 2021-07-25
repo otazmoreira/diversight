@@ -217,8 +217,8 @@
     <style name="TextInputLayout.DropDownMenu">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginStart">@dimen/margin_default_horizontal</item>
-        <item name="android:layout_marginEnd">@dimen/margin_default_horizontal</item>
+        <item name="android:layout_marginStart"/>
+        <item name="android:layout_marginEnd"/>
         <item name="android:layout_marginBottom" />
         <item name="layout_constraintTop_toTopOf">parent</item>
     </style>
@@ -290,6 +290,8 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginStart">@dimen/margin_default_horizontal</item>
+        <item name="android:layout_marginEnd">@dimen/margin_default_horizontal</item>
         <item name="layout_constraintStart_toStartOf">parent</item>
         <item name="layout_constraintEnd_toEndOf">parent</item>
     </style>
@@ -313,6 +315,8 @@
     <style name="TextSignUp">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/margin_default_horizontal</item>
+        <item name="android:layout_marginEnd">@dimen/margin_default_horizontal</item>
         <item name="android:fontFamily">@font/mulish_regular</item>
         <item name="android:textColor">@color/black_text</item>
         <item name="android:textSize">@dimen/text_large</item>
@@ -323,6 +327,8 @@
     <style name="FirstWordSignUp">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/margin_default_horizontal</item>
+        <item name="android:layout_marginEnd">@dimen/margin_default_horizontal</item>
         <item name="android:textSize">@dimen/heading_h3</item>
         <item name="android:fontFamily">@font/mulish_bold</item>
         <item name="android:textColor">@color/black_text</item>
@@ -333,6 +339,15 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">32dp</item>
         <item name="layout_constraintTop_toBottomOf">@id/text</item>
+    </style>
+
+    <style name="Dot">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">4dp</item>
+        <item name="android:layout_marginEnd">4dp</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
     </style>
 
 </resources>

@@ -190,7 +190,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:orientation="vertical"
-            android:visibility="visible"
+            android:visibility="gone"
             android:layout_marginHorizontal="@dimen/margin_default_horizontal">
 
             <androidx.appcompat.widget.AppCompatCheckBox
