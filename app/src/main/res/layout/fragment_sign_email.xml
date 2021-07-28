@@ -32,6 +32,7 @@
             android:id="@+id/txtEmail"
             style="@style/TitleInput"
             app:layout_constraintTop_toBottomOf="@id/text"
+            app:layout_constraintStart_toStartOf="parent"
 
             android:text="@string/email"
             tools:ignore="MissingConstraints" />
