@@ -20,13 +20,13 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/edtName"
             style="@style/TextInputLayout"
-
             tools:ignore="MissingConstraints">
 
             <AutoCompleteTextView
                 android:id="@+id/autoName"
                 style="@style/TextInputLayoutAuto"
-                android:hint="@string/name" />
+                android:hint="@string/name"
+                tools:ignore="TextContrastCheck" />
 
         </com.google.android.material.textfield.TextInputLayout>
 

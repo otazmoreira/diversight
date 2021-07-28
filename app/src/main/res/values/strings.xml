@@ -109,5 +109,6 @@
 
     <string name="back">Anterior</string>
     <string name="lets_go">Vamos lá!</string>
+    <string name="empty_input">Campo vazio!</string>
 
 </resources>

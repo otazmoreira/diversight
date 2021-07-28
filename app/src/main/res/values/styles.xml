@@ -199,7 +199,7 @@
 
     <style name="TextInputLayout" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">44dp</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginStart">@dimen/margin_default_horizontal</item>
         <item name="android:layout_marginEnd">@dimen/margin_default_horizontal</item>
         <item name="android:layout_marginTop">8dp</item>
@@ -242,7 +242,7 @@
 
     <style name="TextInputLayoutAuto">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_height">48dp</item>
         <item name="android:fontFamily">@font/mulish_regular</item>
         <item name="android:paddingStart">16dp</item>
         <item name="android:paddingEnd">16dp</item>
@@ -254,7 +254,7 @@
     </style>
 
     <style name="TextInputLayoutAuto.DropDownMenu">
-        <item name="android:layout_height">44dp</item>
+        <item name="android:layout_height">48dp</item>
         <item name="android:inputType">none</item>
         <item name="android:drawableEnd">@drawable/ic_arrow</item>
         <item name="android:text">@string/select</item>
@@ -315,8 +315,8 @@
     <style name="TextSignUp">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginStart">@dimen/margin_default_horizontal</item>
-        <item name="android:layout_marginEnd">@dimen/margin_default_horizontal</item>
+        <item name="android:paddingStart">@dimen/margin_default_horizontal</item>
+        <item name="android:paddingEnd">@dimen/margin_default_horizontal</item>
         <item name="android:fontFamily">@font/mulish_regular</item>
         <item name="android:textColor">@color/black_text</item>
         <item name="android:textSize">@dimen/text_large</item>
