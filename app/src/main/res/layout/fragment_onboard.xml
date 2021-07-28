@@ -67,12 +67,13 @@
 
                 <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/dot_1"
-                    app:layout_constraintStart_toEndOf="@id/dot_0"
-                    app:layout_constraintEnd_toStartOf="@id/dot_2"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                    style="@style/Dot"
                     android:src="@drawable/ic_dot_off"
-                    style="@style/Dot" />
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/dot_2"
+                    app:layout_constraintStart_toEndOf="@id/dot_0"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ImageContrastCheck" />
 
                 <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/dot_2"
@@ -81,6 +82,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
                     android:src="@drawable/ic_dot_off"
+                    tools:ignore="ImageContrastCheck"
                     style="@style/Dot" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
