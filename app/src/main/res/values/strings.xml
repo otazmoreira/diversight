@@ -110,5 +110,7 @@
     <string name="back">Anterior</string>
     <string name="lets_go">Vamos lá!</string>
     <string name="empty_input">Campo vazio!</string>
+    <string name="password_do_not_match">As senhas não combinam</string>
+    <string name="signup_complete">Cadastro realizado!</string>
 
 </resources>

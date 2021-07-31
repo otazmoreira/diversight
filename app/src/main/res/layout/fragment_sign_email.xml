@@ -46,6 +46,7 @@
             app:layout_constraintEnd_toEndOf="parent">
 
             <AutoCompleteTextView
+                android:id="@+id/autoEmail"
                 style="@style/TextInputLayoutAuto"
                 android:hint="@string/email"
                 android:inputType="textEmailAddress" />

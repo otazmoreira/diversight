@@ -6,7 +6,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/image"
@@ -15,6 +16,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/description"
             tools:src="@drawable/ic_onboard_1"/>
 
         <androidx.appcompat.widget.AppCompatTextView
@@ -24,11 +26,13 @@
             android:fontFamily="@font/mulish_bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="380dp"
+
+            android:layout_marginBottom="40dp"
 
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image"
+            app:layout_constraintBottom_toTopOf="@id/description"
             tools:text="Analise de NPS"/>
 
         <androidx.appcompat.widget.AppCompatTextView
@@ -41,13 +45,14 @@
             android:fontFamily="@font/mulish_regular"
             android:textColor="@color/black_text"
 
-            android:layout_marginTop="27dp"
             android:layout_marginStart="@dimen/margin_default_horizontal"
             android:layout_marginEnd="@dimen/margin_default_horizontal"
+            android:layout_marginBottom="24dp"
 
             app:layout_constraintTop_toBottomOf="@id/title"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
 
             tools:text="Responda de forma segura uma pesquisa trimestral e demonstre a sua satisfação com a empresa atual."/>
 

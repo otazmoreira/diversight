@@ -212,6 +212,7 @@
         <item name="boxCornerRadiusTopStart">12dp</item>
         <item name="layout_constraintStart_toStartOf">parent</item>
         <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="boxStrokeErrorColor">@color/red_0</item>
     </style>
 
     <style name="TextInputLayout.DropDownMenu">

@@ -16,6 +16,33 @@
             app:defaultNavHost="true"
             app:navGraph="@navigation/sign_navigation" />
 
+        <View
+            android:id="@+id/bcProgressCircular"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:elevation="2dp"
+            android:background="@color/transparent_black_3"
+            android:visibility="gone"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/progressCircular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:elevation="3dp"
+            android:visibility="gone"
+            app:trackColor="@color/white_minus_1"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>
