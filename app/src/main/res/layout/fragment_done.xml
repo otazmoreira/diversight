@@ -32,9 +32,15 @@
             tools:text="Pesquisa\nHumor Diário"/>
 
         <!--Status layout-->
-        <include
-            android:id="@+id/statusLayout"
-            layout="@layout/status" />
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/backgroundTop"
+            app:layout_constraintBottom_toTopOf="@id/btnBackHome"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+            <include layout="@layout/status" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
 
         <!--Send button-->
         <com.google.android.material.button.MaterialButton

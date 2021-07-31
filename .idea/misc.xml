@@ -5,7 +5,9 @@
       <map>
         <entry key="..\:/Users/tavie/AndroidStudioProjects/Diversight/app/src/main/res/drawable/ic_onboard_1.xml" value="0.39739583333333334" />
         <entry key="..\:/Users/tavie/AndroidStudioProjects/Diversight/app/src/main/res/layout/activity_user.xml" value="0.38125" />
-        <entry key="..\:/Users/tavie/AndroidStudioProjects/Diversight/app/src/main/res/layout/fragment_login.xml" value="0.37538461538461537" />
+        <entry key="..\:/Users/tavie/AndroidStudioProjects/Diversight/app/src/main/res/layout/fragment_done.xml" value="0.915" />
+        <entry key="..\:/Users/tavie/AndroidStudioProjects/Diversight/app/src/main/res/layout/fragment_emotional.xml" value="0.38125" />
+        <entry key="..\:/Users/tavie/AndroidStudioProjects/Diversight/app/src/main/res/layout/fragment_login.xml" value="0.915" />
         <entry key="..\:/Users/tavie/AndroidStudioProjects/Diversight/app/src/main/res/layout/fragment_onboard.xml" value="0.37538461538461537" />
         <entry key="..\:/Users/tavie/AndroidStudioProjects/Diversight/app/src/main/res/layout/fragment_page.xml" value="0.38125" />
         <entry key="..\:/Users/tavie/AndroidStudioProjects/Diversight/app/src/main/res/layout/fragment_questions_enterprise.xml" value="0.38125" />
