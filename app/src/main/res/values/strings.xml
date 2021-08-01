@@ -112,5 +112,7 @@
     <string name="empty_input">Campo vazio!</string>
     <string name="password_do_not_match">As senhas não combinam</string>
     <string name="signup_complete">Cadastro realizado!</string>
+    <string name="update_data_user">Dados atualizados</string>
+    <string name="error">Erro!</string>
 
 </resources>

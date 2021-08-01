@@ -80,7 +80,11 @@
         android:id="@+id/dataUserFragment"
         android:name="com.metaexploit.diversight.ui.main.data_user.DataUserFragment"
         android:label="data_user_fragment"
-        tools:layout="@layout/fragment_data_user" />
+        tools:layout="@layout/fragment_data_user" >
+        <argument
+            android:name="user"
+            app:argType="string" />
+    </fragment>
     <fragment
         android:id="@+id/dataEnterpriseFragment"
         android:name="com.metaexploit.diversight.ui.main.data_enterprise.DataEnterpriseFragment"
