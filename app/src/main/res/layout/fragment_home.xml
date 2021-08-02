@@ -33,8 +33,6 @@
                 layout="@layout/status"
                 android:visibility="visible" />
 
-            <!--TODO("Reduce icons size of "Weekly" and "NPS" like the "Daily"")-->
-            <!--TODO("Try use ConstraintLayout to turn layout responsive to be bigger")-->
             <!--Menu filter-->
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:id="@+id/menuFilter"
