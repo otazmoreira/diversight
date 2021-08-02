@@ -15,14 +15,17 @@
         android:theme="@style/Theme.Diversight"
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
-        <activity android:name=".ui.sign.UserActivity">
+        <activity
+            android:name=".ui.splash.SplashActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.main.MainActivity"/>
+        <activity android:name=".ui.sign.UserActivity" />
+        <activity android:name=".ui.main.MainActivity" />
     </application>
 
 </manifest>

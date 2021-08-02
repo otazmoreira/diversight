@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/tavie/AndroidStudioProjects/Diversight/app/src/main/res/drawable/ic_onboard_1.xml" value="0.39739583333333334" />
+        <entry key="..\:/Users/tavie/AndroidStudioProjects/Diversight/app/src/main/res/layout/activity_splash.xml" value="0.38125" />
         <entry key="..\:/Users/tavie/AndroidStudioProjects/Diversight/app/src/main/res/layout/activity_user.xml" value="0.38125" />
         <entry key="..\:/Users/tavie/AndroidStudioProjects/Diversight/app/src/main/res/layout/fragment_data_enterprise.xml" value="0.38125" />
         <entry key="..\:/Users/tavie/AndroidStudioProjects/Diversight/app/src/main/res/layout/fragment_data_user.xml" value="0.38125" />
@@ -20,6 +21,7 @@
         <entry key="..\:/Users/tavie/AndroidStudioProjects/Diversight/app/src/main/res/layout/fragment_sign_password.xml" value="0.35833333333333334" />
         <entry key="..\:/Users/tavie/AndroidStudioProjects/Diversight/app/src/main/res/layout/fragment_sign_user.xml" value="0.35833333333333334" />
         <entry key="..\:/Users/tavie/AndroidStudioProjects/Diversight/app/src/main/res/layout/fragment_signup.xml" value="0.35833333333333334" />
+        <entry key="..\:/Users/tavie/AndroidStudioProjects/Diversight/app/src/main/res/layout/fragment_splash.xml" value="0.38125" />
       </map>
     </option>
   </component>
