@@ -42,7 +42,8 @@
             <AutoCompleteTextView
                 style="@style/TextInputLayoutAuto"
                 android:hint="@string/email"
-                android:inputType="textEmailAddress" />
+                android:inputType="textEmailAddress"
+                android:text="milly@ioasys.com"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -71,7 +72,8 @@
             <AutoCompleteTextView
                 style="@style/TextInputLayoutAuto"
                 android:inputType="textPassword"
-                android:hint="@string/password" />
+                android:hint="@string/password"
+                android:text="123"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
