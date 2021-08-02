@@ -34,10 +34,13 @@
     <string name="sex">Gênero</string>
     <string name="gender">Orientação sexual</string>
     <string name="pcd">PCD</string>
-
-    <!--Shared keys-->
-    <string name="id_shared_pref">shared-pref</string>
-    <string name="id_user">user</string>
+    <string name="back">Anterior</string>
+    <string name="lets_go">Vamos lá!</string>
+    <string name="empty_input">Campo vazio!</string>
+    <string name="password_do_not_match">As senhas não combinam</string>
+    <string name="signup_complete">Cadastro realizado!</string>
+    <string name="update_data_user">Dados atualizados</string>
+    <string name="error">Erro!</string>
     <string name="birthday">Data de nascimento</string>
     <string name="update">Atualizar</string>
     <string name="select_date">Selecione a data</string>
@@ -107,12 +110,8 @@
     <string name="onboard_text2">Responda de forma segura uma pesquisa trimestral e demonstre a sua satisfação com a empresa atual.</string>
     <string name="onboard_text3">Responda as pesquisas e ajude a transformar o seu ambiente organizacional em um local mais inclusivo.</string>
 
-    <string name="back">Anterior</string>
-    <string name="lets_go">Vamos lá!</string>
-    <string name="empty_input">Campo vazio!</string>
-    <string name="password_do_not_match">As senhas não combinam</string>
-    <string name="signup_complete">Cadastro realizado!</string>
-    <string name="update_data_user">Dados atualizados</string>
-    <string name="error">Erro!</string>
-
+    <!--Shared keys-->
+    <string name="id_shared_pref">shared-pref</string>
+    <string name="id_user">user</string>
+    <string name="id_onboard_view">onboard_view</string>
 </resources>
