@@ -15,15 +15,6 @@
             app:destination="@id/signupFragment" />
     </fragment>
     <fragment
-        android:id="@+id/onboardFragment"
-        android:name="com.metaexploit.diversight.ui.sign.onboard.OnboardFragment"
-        android:label="fragment_onboard"
-        tools:layout="@layout/fragment_onboard" >
-        <action
-            android:id="@+id/action_onboardFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
-    </fragment>
-    <fragment
         android:id="@+id/signupFragment"
         android:name="com.metaexploit.diversight.ui.sign.signup.SignupFragment"
         android:label="fragment_signup"
