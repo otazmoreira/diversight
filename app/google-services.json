@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "884862518793",
+    "project_id": "meta-exploit",
+    "storage_bucket": "meta-exploit.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:884862518793:android:72ecd65a23375d5d8b5ad8",
+        "android_client_info": {
+          "package_name": "com.metaexploit.diversight"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "884862518793-078t2k082i79cf7lc6cnct23ivf0oeur.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVDdV7HczJhLn71rdSKSc9-Dk5m9nYvvY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "884862518793-078t2k082i79cf7lc6cnct23ivf0oeur.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
