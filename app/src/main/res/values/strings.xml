@@ -3,7 +3,7 @@
     <string name="title_home">Home</string>
     <string name="title_user">Usuário</string>
     <string name="title_home_header">Pesquisas</string>
-    <string name="title_emotional_header">Pesquisa\nHumor Diário</string>
+    <string name="title_emotional_header">Pesquisa\nHumor %1$s</string>
     <string name="title_research_header">Pesquisa\n%1$s</string>
     <string name="status_done">Sua pesquisa foi enviada com sucesso!</string>
     <string name="status_empty">Nenhuma pesquisa disponível\nno momento!</string>
@@ -54,6 +54,13 @@
     <string name="occupation">Área de atuação</string>
     <string name="office">Cargo</string>
     <string name="next">Próximo</string>
+
+    <!--Emoticons description-->
+    <string name="very_sad">Muito ruim</string>
+    <string name="normal">Normal</string>
+    <string name="bad">Ruim</string>
+    <string name="good">Bom</string>
+    <string name="very_good">Muito bom</string>
 
     <!--Skin list-->
     <string-array name="skins_list">
