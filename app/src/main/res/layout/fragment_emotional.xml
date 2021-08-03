@@ -5,10 +5,12 @@
     tools:context=".ui.main.emotional.EmotionalFragment">
 
     <data>
-
         <variable
             name="Header"
             type="com.metaexploit.diversight.ui.main.Header" />
+        <variable
+            name="Question"
+            type="com.metaexploit.diversight.ui.main.emotional.Question" />
     </data>
 
     <!--Root ViewGroup-->
@@ -66,6 +68,8 @@
 
                 android:textSize="@dimen/text_small"
 
+                android:text="@={Question.date}"
+
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:text="03/05/2021" />
@@ -86,6 +90,7 @@
                     android:gravity="center"
                     android:textColor="@color/black_text"
                     android:textSize="@dimen/text_large"
+                    android:text="@={Question.enunciated}"
                     tools:text="Como você está se sentindo hoje?" />
 
                 <View
@@ -102,11 +107,7 @@
                     android:layout_marginHorizontal="14dp"
                     android:layout_marginTop="34dp"
                     android:layout_marginBottom="36dp"
-                    android:visibility="visible"
-
-                    app:layout_constraintEnd_toEndOf="@id/line"
-                    app:layout_constraintStart_toStartOf="@id/line"
-                    app:layout_constraintTop_toBottomOf="@id/line">
+                    android:visibility="visible">
 
                     <androidx.appcompat.widget.LinearLayoutCompat
                         android:id="@+id/emVerySad"

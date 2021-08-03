@@ -5,6 +5,7 @@
     <string name="title_home_header">Pesquisas</string>
     <string name="title_emotional_header">Pesquisa\nHumor %1$s</string>
     <string name="title_research_header">Pesquisa\n%1$s</string>
+    <string name="question_enunciated">Como você está se sentindo %1$s?</string>
     <string name="status_done">Sua pesquisa foi enviada com sucesso!</string>
     <string name="status_empty">Nenhuma pesquisa disponível\nno momento!</string>
     <string name="home_back">Voltar para home</string>
@@ -121,4 +122,5 @@
     <string name="id_shared_pref">shared-pref</string>
     <string name="id_user">user</string>
     <string name="id_onboard_view">onboard_view</string>
+    <string name="select_emoticon">Selecione uma emoção!</string>
 </resources>
