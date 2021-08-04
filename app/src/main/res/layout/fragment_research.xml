@@ -4,60 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ui.main.research.ResearchFragment">
 
-    <data>
-        <variable
-            name="Header"
-            type="com.metaexploit.diversight.ui.main.Header" />
-    </data>
-
     <!--Root ViewGroup-->
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/questions"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
-        <!--Background top-->
-        <include
-            android:id="@+id/backgroundTop"
-            layout="@layout/background_top" />
-
-        <!--Back button-->
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/btnBack"
-            style="@style/BackButton"
-
-            tools:ignore="MissingConstraints" />
-
-        <!--Title-->
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/titleHeader"
-            style="@style/TitleHeader.Center"
-
-            android:text="@={Header.title}"
-            tools:ignore="MissingConstraints"
-            tools:text="Pesquisa\nNPS" />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/questions"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginTop="@dimen/margin_default_horizontal"
-            android:layout_marginBottom="50dp"
-            android:orientation="vertical"
-            app:fastScrollEnabled="false"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-
-            app:layout_constraintBottom_toTopOf="@id/btnSend"
-            app:layout_constraintTop_toBottomOf="@id/backgroundTop" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnSend"
-            style="@style/IconMaterialButton.Send"
-
-            android:text="@string/send"
-            app:icon="@drawable/ic_send"
-
-            app:layout_constraintTop_toBottomOf="@id/questions"
-            tools:ignore="MissingConstraints" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_default_horizontal">
+
+        <!--Background top-->
+        <include
+            android:id="@+id/backgroundTop"
+            layout="@layout/background_top" />
+
+        <!--Back button-->
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnBack"
+            style="@style/BackButton.Item"
+
+            tools:ignore="MissingConstraints" />
+
+        <!--Title-->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/itemTitleHeader"
+            style="@style/TitleHeader.Center"
+
+            tools:ignore="MissingConstraints"
+            tools:text="Pesquisa\nNPS" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

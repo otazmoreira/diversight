@@ -61,6 +61,10 @@
         <item name="android:elevation">2dp</item>
     </style>
 
+    <style name="BackButton.Item">
+        <item name="layout_constraintTop_toTopOf">@id/itemTitleHeader</item>
+    </style>
+
     <!--Material button with icon-->
     <style name="IconMaterialButton">
         <item name="android:layout_width">wrap_content</item>
