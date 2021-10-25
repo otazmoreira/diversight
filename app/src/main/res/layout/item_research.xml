@@ -38,7 +38,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="4dp"
 
-        android:fontFamily="@font/mulish_regular"
+        android:fontFamily="@font/mulish"
         android:textColor="@color/black_text"
         android:textSize="@dimen/text_small"
 

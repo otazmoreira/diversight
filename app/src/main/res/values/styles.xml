@@ -7,7 +7,7 @@
         <item name="layout_constraintTop_toTopOf">@id/backgroundTop</item>
         <item name="layout_constraintStart_toStartOf">@id/backgroundTop</item>
         <item name="layout_constraintVertical_bias">@dimen/bias_default</item>
-        <item name="android:layout_marginStart">@dimen/margin_default_horizontal</item>
+        <item name="android:layout_marginStart">@dimen/margin_default</item>
     </style>
 
     <!--Header title-->
@@ -87,8 +87,8 @@
     <!--Material button-->
     <style name="MaterialButton" parent="IconMaterialButton">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_marginStart">@dimen/margin_default_horizontal</item>
-        <item name="android:layout_marginEnd">@dimen/margin_default_horizontal</item>
+        <item name="android:layout_marginStart">@dimen/margin_default</item>
+        <item name="android:layout_marginEnd">@dimen/margin_default</item>
         <item name="android:elevation">8dp</item>
         <item name="layout_constraintBottom_toBottomOf"/>
     </style>
@@ -103,8 +103,8 @@
 
     <!--Material button with icon - Send button-->
     <style name="IconMaterialButton.Send">
-        <item name="android:paddingStart">@dimen/margin_default_horizontal</item>
-        <item name="android:paddingEnd">@dimen/margin_default_horizontal</item>
+        <item name="android:paddingStart">@dimen/margin_default</item>
+        <item name="android:paddingEnd">@dimen/margin_default</item>
     </style>
 
     <!--Material button in fragment_user.xml-->
@@ -121,7 +121,7 @@
     </style>
 
     <style name="MaterialButtonText.User">
-        <item name="android:layout_marginStart">@dimen/margin_default_horizontal</item>
+        <item name="android:layout_marginStart">@dimen/margin_default</item>
         <item name="android:paddingStart">12dp</item>
         <item name="android:paddingEnd">12dp</item>
         <item name="layout_constraintHorizontal_bias">@dimen/bias_none</item>
@@ -166,8 +166,8 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:fontFamily">@font/mulish_bold</item>
-        <item name="android:paddingStart">@dimen/margin_default_horizontal</item>
-        <item name="android:paddingEnd">@dimen/margin_default_horizontal</item>
+        <item name="android:paddingStart">@dimen/margin_default</item>
+        <item name="android:paddingEnd">@dimen/margin_default</item>
         <item name="android:paddingBottom">8dp</item>
         <item name="android:textColor">@color/black_0</item>
         <item name="android:textSize">@dimen/text_large</item>
@@ -178,8 +178,8 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:clipToPadding">false</item>
         <item name="android:orientation">horizontal</item>
-        <item name="android:paddingStart">@dimen/margin_default_horizontal</item>
-        <item name="android:paddingEnd">@dimen/margin_default_horizontal</item>
+        <item name="android:paddingStart">@dimen/margin_default</item>
+        <item name="android:paddingEnd">@dimen/margin_default</item>
         <item name="android:layout_marginBottom">32dp</item>
         <item name="layoutManager">androidx.recyclerview.widget.LinearLayoutManager</item>
     </style>
@@ -205,8 +205,8 @@
     <style name="TextInputLayout" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginStart">@dimen/margin_default_horizontal</item>
-        <item name="android:layout_marginEnd">@dimen/margin_default_horizontal</item>
+        <item name="android:layout_marginStart">@dimen/margin_default</item>
+        <item name="android:layout_marginEnd">@dimen/margin_default</item>
         <item name="android:layout_marginTop">8dp</item>
         <item name="hintEnabled">false</item>
         <item name="boxStrokeColor">@color/cs_input</item>
@@ -232,8 +232,8 @@
     <style name="TextInputLayoutDropDownMenu" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">44dp</item>
-        <item name="android:layout_marginStart">@dimen/margin_default_horizontal</item>
-        <item name="android:layout_marginEnd">@dimen/margin_default_horizontal</item>
+        <item name="android:layout_marginStart">@dimen/margin_default</item>
+        <item name="android:layout_marginEnd">@dimen/margin_default</item>
         <item name="android:layout_marginTop">8dp</item>
         <item name="hintEnabled">false</item>
         <item name="boxStrokeColor">@color/cs_input</item>
@@ -249,7 +249,7 @@
     <style name="TextInputLayoutAuto">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">48dp</item>
-        <item name="android:fontFamily">@font/mulish_regular</item>
+        <item name="android:fontFamily">@font/mulish</item>
         <item name="android:paddingStart">16dp</item>
         <item name="android:paddingEnd">16dp</item>
         <item name="android:paddingTop">0dp</item>
@@ -271,10 +271,10 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@color/black_text</item>
         <item name="android:textSize">@dimen/text_large</item>
-        <item name="android:fontFamily">@font/mulish_regular</item>
+        <item name="android:fontFamily">@font/mulish</item>
         <item name="android:layout_marginTop">24dp</item>
-        <item name="android:layout_marginStart">@dimen/margin_default_horizontal</item>
-        <item name="android:layout_marginEnd">@dimen/margin_default_horizontal</item>
+        <item name="android:layout_marginStart">@dimen/margin_default</item>
+        <item name="android:layout_marginEnd">@dimen/margin_default</item>
     </style>
 
     <style name="InputItem">
@@ -284,7 +284,7 @@
         <item name="android:paddingStart">16dp</item>
         <item name="android:textColor">@color/black_text</item>
         <item name="android:textSize">@dimen/heading_h7</item>
-        <item name="android:fontFamily">@font/mulish_regular</item>
+        <item name="android:fontFamily">@font/mulish</item>
         <item name="android:layout_marginTop">24dp</item>
     </style>
 
@@ -296,8 +296,8 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:orientation">vertical</item>
-        <item name="android:layout_marginStart">@dimen/margin_default_horizontal</item>
-        <item name="android:layout_marginEnd">@dimen/margin_default_horizontal</item>
+        <item name="android:layout_marginStart">@dimen/margin_default</item>
+        <item name="android:layout_marginEnd">@dimen/margin_default</item>
         <item name="layout_constraintStart_toStartOf">parent</item>
         <item name="layout_constraintEnd_toEndOf">parent</item>
     </style>
@@ -321,9 +321,9 @@
     <style name="TextSignUp">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:paddingStart">@dimen/margin_default_horizontal</item>
-        <item name="android:paddingEnd">@dimen/margin_default_horizontal</item>
-        <item name="android:fontFamily">@font/mulish_regular</item>
+        <item name="android:paddingStart">@dimen/margin_default</item>
+        <item name="android:paddingEnd">@dimen/margin_default</item>
+        <item name="android:fontFamily">@font/mulish</item>
         <item name="android:textColor">@color/black_text</item>
         <item name="android:textSize">@dimen/text_large</item>
         <item name="android:layout_marginTop">16dp</item>
@@ -333,8 +333,8 @@
     <style name="FirstWordSignUp">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginStart">@dimen/margin_default_horizontal</item>
-        <item name="android:layout_marginEnd">@dimen/margin_default_horizontal</item>
+        <item name="android:layout_marginStart">@dimen/margin_default</item>
+        <item name="android:layout_marginEnd">@dimen/margin_default</item>
         <item name="android:textSize">@dimen/heading_h3</item>
         <item name="android:fontFamily">@font/mulish_bold</item>
         <item name="android:textColor">@color/black_text</item>

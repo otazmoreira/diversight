@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+
+        android:textColor="@color/black_text"
+        android:textSize="@dimen/text_large"
+        android:fontFamily="@font/mulish"
+        tools:text="Label"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_diver_input"
+        android:paddingHorizontal="16dp"
+
+        android:textSize="@dimen/heading_h7"
+
+        tools:hint="Placeholder"
+        android:textColorHint="@color/black_text"
+        app:layout_constraintTop_toBottomOf="@id/label"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:visibility="gone"
+
+        android:textSize="@dimen/text_small"
+        android:fontFamily="@font/mulish"
+        android:textColor="#6C757D"
+
+        tools:text="Message"
+
+        app:layout_constraintTop_toBottomOf="@id/editText"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

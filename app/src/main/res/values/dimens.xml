@@ -15,7 +15,7 @@
     <dimen name="heading_h1">48sp</dimen>
 
     <!--Margin-->
-    <dimen name="margin_default_horizontal">24dp</dimen>
+    <dimen name="margin_default">24dp</dimen>
 
     <!--Padding-->
     <dimen name="padding_back_button">5dp</dimen>

@@ -44,7 +44,7 @@
             android:id="@+id/emoticonCard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/margin_default_horizontal"
+            android:layout_marginHorizontal="@dimen/margin_default"
 
             android:layout_marginTop="60dp"
 
