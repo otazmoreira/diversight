@@ -3,7 +3,7 @@
     <declare-styleable name="BaseDiverInput">
         <attr name="diverLabel" format="string" />
         <attr name="diverHint" format="string" />
-        <attr name="diverDropdownMenu" format="boolean" />
+        <attr name="diverMessage" format="string" />
         <attr name="diverPrimaryColor" format="color" />
     </declare-styleable>
 </resources>

@@ -10,176 +10,43 @@
         android:orientation="vertical">
 
         <com.metaexploit.diversight.uikit.DiverInput
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:id="@+id/inputName"
+            style="@style/DiverInput"
+            app:diverLabel="@string/name" />
 
-            android:layout_marginTop="@dimen/margin_default"
-            android:layout_marginHorizontal="@dimen/margin_default"
-
-            app:diverLabel="@string/name"/>
-
-        <!--Skin label-->
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/txtSkin"
-            style="@style/TitleInput"
-
-            android:text="@string/skin"
-            tools:ignore="MissingConstraints" />
-        <!--Skin dropdown menu-->
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/containerSkin"
-            style="@style/DropDownMenuContainer"
-            tools:ignore="MissingConstraints">
-
-            <!--Skin Input-->
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/edtSkin"
-                style="@style/TextInputLayout.DropDownMenu"
-                tools:ignore="MissingConstraints">
-
-                <AutoCompleteTextView
-                    android:id="@+id/autoSkin"
-                    style="@style/TextInputLayoutAuto.DropDownMenu"
-                    android:layout_width="match_parent"
-                    android:hint="@string/name" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <!--Skin options-->
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:id="@+id/listSkin"
-                style="@style/DropDownMenuOptions"
-
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@id/edtSkin"
-                app:layout_constraintStart_toStartOf="@id/edtSkin"
-                app:layout_constraintTop_toTopOf="@id/edtSkin" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!--Skin-->
+        <com.metaexploit.diversight.uikit.DiverInputDropdownMenu
+            android:id="@+id/inputSkin"
+            style="@style/DiverInput.Dropdown"
+            app:diverLabel="@string/skin" />
 
         <!--Sex label-->
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/txtSex"
-            style="@style/TitleInput"
+        <com.metaexploit.diversight.uikit.DiverInputDropdownMenu
+            android:id="@+id/inputSex"
+            style="@style/DiverInput.Dropdown"
+            app:diverLabel="@string/sex" />
 
-            android:text="@string/sex"
-            tools:ignore="MissingConstraints" />
-        <!--Sex dropdown menu-->
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/containerSex"
-            style="@style/DropDownMenuContainer"
-            tools:ignore="MissingConstraints">
-
-            <!--Sex Input-->
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/edtSex"
-                style="@style/TextInputLayout.DropDownMenu"
-                tools:ignore="MissingConstraints">
-
-                <AutoCompleteTextView
-                    android:id="@+id/autoSex"
-                    style="@style/TextInputLayoutAuto.DropDownMenu"
-                    android:hint="@string/name" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <!--Sex options-->
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:id="@+id/listSex"
-                style="@style/DropDownMenuOptions"
-
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@id/edtSex"
-                app:layout_constraintStart_toStartOf="@id/edtSex"
-                app:layout_constraintTop_toTopOf="@id/edtSex" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <!--Gender label-->
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/txtGender"
-            style="@style/TitleInput"
-
-            android:text="@string/gender"
-            tools:ignore="MissingConstraints" />
-        <!--Gender dropdown menu-->
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/containerGender"
-            style="@style/DropDownMenuContainer"
-            tools:ignore="MissingConstraints">
-
-            <!--Gender Input-->
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/edtGender"
-                style="@style/TextInputLayout.DropDownMenu"
-                tools:ignore="MissingConstraints">
-
-                <AutoCompleteTextView
-                    android:id="@+id/autoGender"
-                    style="@style/TextInputLayoutAuto.DropDownMenu"
-                    android:hint="@string/name" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <!--Gender options-->
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:id="@+id/listGender"
-                style="@style/DropDownMenuOptions"
-
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@id/edtGender"
-                app:layout_constraintStart_toStartOf="@id/edtGender"
-                app:layout_constraintTop_toTopOf="@id/edtGender" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!--Gender-->
+        <com.metaexploit.diversight.uikit.DiverInputDropdownMenu
+            android:id="@+id/inputGender"
+            style="@style/DiverInput.Dropdown"
+            app:diverLabel="@string/gender" />
 
         <!--PCD label-->
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/txtPCD"
-            style="@style/TitleInput"
-
-            android:text="@string/pcd"
-            tools:ignore="MissingConstraints" />
-        <!--PCD dropdown menu-->
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/containerPCD"
-            style="@style/DropDownMenuContainer"
-            tools:ignore="MissingConstraints">
-
-            <!--PCD Input-->
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/edtPCD"
-                style="@style/TextInputLayout.DropDownMenu"
-                tools:ignore="MissingConstraints">
-
-                <AutoCompleteTextView
-                    android:id="@+id/autoPCD"
-                    style="@style/TextInputLayoutAuto.DropDownMenu"
-                    android:hint="@string/name" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <!--PCD options-->
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:id="@+id/listPCD"
-                style="@style/DropDownMenuOptions"
-
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@id/edtPCD"
-                app:layout_constraintStart_toStartOf="@id/edtPCD"
-                app:layout_constraintTop_toTopOf="@id/edtPCD" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        <com.metaexploit.diversight.uikit.DiverInputDropdownMenu
+            android:id="@+id/inputPCD"
+            style="@style/DiverInput.Dropdown"
+            app:diverLabel="@string/pcd" />
 
         <!--PCD options-->
         <androidx.appcompat.widget.LinearLayoutCompat
             android:id="@+id/containerPCDOptions"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_default"
             android:layout_marginTop="16dp"
             android:orientation="vertical"
-            android:visibility="gone"
-            android:layout_marginHorizontal="@dimen/margin_default">
+            android:visibility="gone">
 
             <androidx.appcompat.widget.AppCompatCheckBox
                 android:id="@+id/optVisual"
@@ -233,6 +100,7 @@
                 android:inputType="none" />
 
         </com.google.android.material.textfield.TextInputLayout>
+
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 </layout>
