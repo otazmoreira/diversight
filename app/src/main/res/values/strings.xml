@@ -63,36 +63,6 @@
     <string name="good">Bom</string>
     <string name="very_good">Muito bom</string>
 
-    <!--Skin list-->
-    <string-array name="skins_list">
-        <item>Branca</item>
-        <item>Parda</item>
-        <item>Preta</item>
-        <item>Amarela</item>
-        <item>Indígena</item>
-    </string-array>
-    <!--Sex list-->
-    <string-array name="sex_list">
-        <item>Homem cisgênero</item>
-        <item>Mulher cisgênero</item>
-        <item>Homem transgênero</item>
-        <item>Mulher transgênero</item>
-        <item>Agênero</item>
-        <item>Não binário</item>
-    </string-array>
-    <!--Gender list-->
-    <string-array name="gender_list">
-        <item>Heterossexual</item>
-        <item>Homossexual</item>
-        <item>Bissexual</item>
-        <item>Panssexual</item>
-        <item>Assexual</item>
-    </string-array>
-    <!--PCD response list-->
-    <string-array name="pcd_response_list">
-        <item>Não possui</item>
-        <item>Possui</item>
-    </string-array>
 
     <!--First word SignUp-->
     <string name="signup_first_word_user">Olá</string>
