@@ -4,11 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ui.main.done.DoneFragment">
 
-    <data>
-        <variable
-            name="Header"
-            type="com.metaexploit.diversight.ui.main.Header" />
-    </data>
+
 
     <!--Root ViewGroup-->
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -27,7 +23,6 @@
 
             app:layout_constraintTop_toTopOf="@id/backgroundTop"
             app:layout_constraintBottom_toBottomOf="@id/backgroundTop"
-            android:text="@={Header.title}"
             tools:ignore="MissingConstraints"
             tools:text="Pesquisa\nHumor Diário"/>
 

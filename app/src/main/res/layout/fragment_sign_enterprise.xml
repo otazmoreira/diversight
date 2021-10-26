@@ -30,7 +30,7 @@
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/questionsContainer"
-            android:name="com.metaexploit.diversight.ui.sign.signup.questions_enterprise.EnterpriseQuestionsFragment"
+            android:name="com.metaexploit.diversight.ui.questions.questions_enterprise.EnterpriseQuestionsFragment"
             tools:layout="@layout/fragment_questions_enterprise"
             style="@style/NavHostSignup"
             tools:ignore="MissingConstraints"/>

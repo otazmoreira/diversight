@@ -22,8 +22,6 @@
         android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:shadowColor="@color/transparent"
-        android:shadowRadius="0"
         android:background="@drawable/bg_diver_input"
         android:paddingHorizontal="16dp"
 

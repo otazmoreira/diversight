@@ -89,8 +89,9 @@
     <string name="onboard_text3">Responda as pesquisas e ajude a transformar o seu ambiente organizacional em um local mais inclusivo.</string>
 
     <!--Shared keys-->
-    <string name="id_shared_pref">shared-pref</string>
-    <string name="id_user">user</string>
     <string name="id_onboard_view">onboard_view</string>
     <string name="select_emoticon">Selecione uma emoção!</string>
+    <string name="colab_not_found">Colaborador não encontrado</string>
+    <string name="incorrect_password">Senha incorreta</string>
+    <string name="no_internet">Sem conexão de internet</string>
 </resources>

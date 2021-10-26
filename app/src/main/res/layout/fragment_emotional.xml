@@ -4,15 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ui.main.emotional.EmotionalFragment">
 
-    <data>
-        <variable
-            name="Header"
-            type="com.metaexploit.diversight.ui.main.Header" />
-        <variable
-            name="Question"
-            type="com.metaexploit.diversight.ui.main.emotional.Question" />
-    </data>
-
     <!--Root ViewGroup-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -35,7 +26,7 @@
             android:id="@+id/titleHeader"
             style="@style/TitleHeader.Center"
 
-            android:text="@={Header.title}"
+
             tools:ignore="MissingConstraints"
             tools:text="Pesquisa\nHumor diária" />
 
@@ -68,7 +59,7 @@
 
                 android:textSize="@dimen/text_small"
 
-                android:text="@={Question.date}"
+
 
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -90,7 +81,7 @@
                     android:gravity="center"
                     android:textColor="@color/black_text"
                     android:textSize="@dimen/text_large"
-                    android:text="@={Question.enunciated}"
+
                     tools:text="Como você está se sentindo hoje?" />
 
                 <View
