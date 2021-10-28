@@ -9,123 +9,23 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <!--Enterprise label-->
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/txtEnterprise"
-            style="@style/TitleInput"
-            android:layout_marginTop="0dp"
+        <!--Enterprise-->
+        <com.metaexploit.diversight.uikit.DiverInputDropdownMenu
+            android:id="@+id/inputEnterprise"
+            style="@style/DiverInput.Dropdown"
+            app:diverLabel="@string/enterprise" />
 
-            android:text="@string/enterprise"
-            tools:ignore="MissingConstraints" />
-        <!--Enterprise dropdown menu-->
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/containerEnterprise"
-            android:layout_width="match_parent"
-            style="@style/DropDownMenuContainer"
-            tools:ignore="MissingConstraints">
+        <!--Occupation-->
+        <com.metaexploit.diversight.uikit.DiverInputDropdownMenu
+            android:id="@+id/inputOccupation"
+            style="@style/DiverInput.Dropdown"
+            app:diverLabel="@string/occupation" />
 
-            <!--Enterprise Input-->
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/edtEnterprise"
-                style="@style/TextInputLayout.DropDownMenu"
-                tools:ignore="MissingConstraints">
-
-                <AutoCompleteTextView
-                    android:id="@+id/autoEnterprise"
-                    style="@style/TextInputLayoutAuto.DropDownMenu"
-                    android:hint="@string/enterprise" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <!--Enterprise options-->
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:id="@+id/listEnterprise"
-                style="@style/DropDownMenuOptions"
-
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@id/edtEnterprise"
-                app:layout_constraintStart_toStartOf="@id/edtEnterprise"
-                app:layout_constraintTop_toTopOf="@id/edtEnterprise" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <!--Occupation label-->
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/txtOccupation"
-            style="@style/TitleInput"
-
-            android:text="@string/occupation"
-            tools:ignore="MissingConstraints" />
-        <!--Occupation dropdown menu-->
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/containerOccupation"
-            android:layout_width="match_parent"
-            style="@style/DropDownMenuContainer"
-            tools:ignore="MissingConstraints">
-
-            <!--Occupation Input-->
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/edtOccupation"
-                style="@style/TextInputLayout.DropDownMenu"
-                tools:ignore="MissingConstraints">
-
-                <AutoCompleteTextView
-                    android:id="@+id/autoOccupation"
-                    style="@style/TextInputLayoutAuto.DropDownMenu"
-                    android:hint="@string/occupation" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <!--Occupation options-->
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:id="@+id/listOccupation"
-                style="@style/DropDownMenuOptions"
-
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@id/edtOccupation"
-                app:layout_constraintStart_toStartOf="@id/edtOccupation"
-                app:layout_constraintTop_toTopOf="@id/edtOccupation" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <!--Office label-->
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/txtOffice"
-            style="@style/TitleInput"
-
-            android:text="@string/office"
-            tools:ignore="MissingConstraints" />
-        <!--Office dropdown menu-->
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/containerOffice"
-            android:layout_width="match_parent"
-            style="@style/DropDownMenuContainer"
-            tools:ignore="MissingConstraints">
-
-            <!--Office Input-->
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/edtOffice"
-                style="@style/TextInputLayout.DropDownMenu"
-                tools:ignore="MissingConstraints">
-
-                <AutoCompleteTextView
-                    android:id="@+id/autoOffice"
-                    style="@style/TextInputLayoutAuto.DropDownMenu"
-                    android:hint="@string/office" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <!--Office options-->
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:id="@+id/listOffice"
-                style="@style/DropDownMenuOptions"
-
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@id/edtOffice"
-                app:layout_constraintStart_toStartOf="@id/edtOffice"
-                app:layout_constraintTop_toTopOf="@id/edtOffice" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!--Office-->
+        <com.metaexploit.diversight.uikit.DiverInputDropdownMenu
+            android:id="@+id/inputOffice"
+            style="@style/DiverInput.Dropdown"
+            app:diverLabel="@string/office"/>
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
