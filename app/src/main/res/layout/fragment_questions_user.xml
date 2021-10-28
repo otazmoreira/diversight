@@ -1,106 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
     tools:context=".ui.questions.questions_user.UserQuestionsFragment">
 
+    <com.metaexploit.diversight.uikit.DiverInput
+        android:id="@+id/inputName"
+        style="@style/DiverInput"
+        app:diverLabel="@string/name" />
+
+    <!--Skin-->
+    <com.metaexploit.diversight.uikit.DiverInputDropdownMenu
+        android:id="@+id/inputSkin"
+        style="@style/DiverInput.Dropdown"
+        app:diverLabel="@string/skin" />
+
+    <!--Sex label-->
+    <com.metaexploit.diversight.uikit.DiverInputDropdownMenu
+        android:id="@+id/inputSex"
+        style="@style/DiverInput.Dropdown"
+        app:diverLabel="@string/sex" />
+
+    <!--Gender-->
+    <com.metaexploit.diversight.uikit.DiverInputDropdownMenu
+        android:id="@+id/inputGender"
+        style="@style/DiverInput.Dropdown"
+        app:diverLabel="@string/gender" />
+
+    <!--PCD label-->
+    <com.metaexploit.diversight.uikit.DiverInputDropdownMenu
+        android:id="@+id/inputPCD"
+        style="@style/DiverInput.Dropdown"
+        app:diverLabel="@string/pcd" />
+
+    <!--PCD options-->
     <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/containerPCDOptions"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_marginHorizontal="@dimen/margin_default"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:visibility="gone">
 
-        <com.metaexploit.diversight.uikit.DiverInput
-            android:id="@+id/inputName"
-            style="@style/DiverInput"
-            app:diverLabel="@string/name" />
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/optVisual"
+            style="@style/CheckBox"
+            android:text="@string/visual" />
 
-        <!--Skin-->
-        <com.metaexploit.diversight.uikit.DiverInputDropdownMenu
-            android:id="@+id/inputSkin"
-            style="@style/DiverInput.Dropdown"
-            app:diverLabel="@string/skin" />
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/optPhysical"
+            style="@style/CheckBox"
+            android:text="@string/physical" />
 
-        <!--Sex label-->
-        <com.metaexploit.diversight.uikit.DiverInputDropdownMenu
-            android:id="@+id/inputSex"
-            style="@style/DiverInput.Dropdown"
-            app:diverLabel="@string/sex" />
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/optHearing"
+            style="@style/CheckBox"
+            android:text="@string/hearing" />
 
-        <!--Gender-->
-        <com.metaexploit.diversight.uikit.DiverInputDropdownMenu
-            android:id="@+id/inputGender"
-            style="@style/DiverInput.Dropdown"
-            app:diverLabel="@string/gender" />
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/optIntellectual"
+            style="@style/CheckBox"
+            android:text="@string/intellectual" />
 
-        <!--PCD label-->
-        <com.metaexploit.diversight.uikit.DiverInputDropdownMenu
-            android:id="@+id/inputPCD"
-            style="@style/DiverInput.Dropdown"
-            app:diverLabel="@string/pcd" />
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/optPsychosocial"
+            style="@style/CheckBox"
+            android:text="@string/psychosocial" />
 
-        <!--PCD options-->
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:id="@+id/containerPCDOptions"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/margin_default"
-            android:layout_marginTop="16dp"
-            android:orientation="vertical"
-            android:visibility="gone">
-
-            <androidx.appcompat.widget.AppCompatCheckBox
-                android:id="@+id/optVisual"
-                style="@style/CheckBox"
-                android:text="@string/visual" />
-
-            <androidx.appcompat.widget.AppCompatCheckBox
-                android:id="@+id/optPhysical"
-                style="@style/CheckBox"
-                android:text="@string/physical" />
-
-            <androidx.appcompat.widget.AppCompatCheckBox
-                android:id="@+id/optHearing"
-                style="@style/CheckBox"
-                android:text="@string/hearing" />
-
-            <androidx.appcompat.widget.AppCompatCheckBox
-                android:id="@+id/optIntellectual"
-                style="@style/CheckBox"
-                android:text="@string/intellectual" />
-
-            <androidx.appcompat.widget.AppCompatCheckBox
-                android:id="@+id/optPsychosocial"
-                style="@style/CheckBox"
-                android:text="@string/psychosocial" />
-
-            <androidx.appcompat.widget.AppCompatCheckBox
-                android:id="@+id/optReadapted"
-                style="@style/CheckBox"
-                android:text="@string/readapted" />
-
-        </androidx.appcompat.widget.LinearLayoutCompat>
-
-        <!--Birthday label-->
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/txtBirthday"
-            style="@style/TitleInput"
-
-            android:text="@string/birthday"
-            tools:ignore="MissingConstraints" />
-        <!--Birthday input-->
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/edtBirthday"
-            style="@style/TextInputLayout"
-            tools:ignore="MissingConstraints">
-
-            <AutoCompleteTextView
-                android:id="@+id/autoBirthday"
-                style="@style/TextInputLayoutAuto"
-                android:hint="@string/birthday"
-                android:inputType="none" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/optReadapted"
+            style="@style/CheckBox"
+            android:text="@string/readapted" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
-</layout>
+
+    <!--Birthday label-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtBirthday"
+        style="@style/TitleInput"
+        android:text="@string/birthday"
+        tools:ignore="MissingConstraints" />
+
+    <!--Birthday input-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtBirthday"
+        style="@style/TextInputLayout"
+        tools:ignore="MissingConstraints">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoBirthday"
+            style="@style/TextInputLayoutAuto"
+            android:hint="@string/birthday"
+            android:inputType="none" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
